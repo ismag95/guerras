@@ -1,0 +1,59 @@
+#titulo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-image: url("../img/titulo.png");
+  background-position: center;
+  right: 0;
+  height: 100px;
+  z-index: 50; }
+
+#antes {
+  background-image: url("../img/antes.jpg");
+  position: fixed;
+  top: 100px;
+  left: 0;
+  background-position: center;
+  width: 25%;
+  height: 50px;
+  z-index: 50; }
+
+#i {
+  background-image: url("../img/i.jpg");
+  position: fixed;
+  top: 100px;
+  left: 25%;
+  background-position: center;
+  right: 50%;
+  height: 50px;
+  z-index: 50; }
+
+#x {
+  background-image: url("../img/x.jpg");
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  background-position: center;
+  right: 25%;
+  height: 50px;
+  z-index: 50; }
+
+#xxi {
+  background-image: url("../img/xxi.jpg");
+  position: fixed;
+  top: 100px;
+  left: 75%;
+  background-position: center;
+  right: 0;
+  height: 50px;
+  z-index: 50; }
+
+#mapa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  z-index: 40; }

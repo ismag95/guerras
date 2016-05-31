@@ -1,0 +1,21 @@
+{
+  "name": "guerras",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-sass": "^2.3.1",
+    "sass": "^0.5.0"
+  },
+  "dependencies": {
+    "imagemin-webp": "^3.1.1"
+  },
+  "description": ""
+}
