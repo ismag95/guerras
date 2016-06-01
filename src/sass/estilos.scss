@@ -31,10 +31,12 @@ left: 0;
   height: 50px;
   z-index: 50;
 
+
 }
 #i{
   background-image: url("../img/i.jpg");
   @include menu (25%,50%);
+
 }
 #x{
   background-image: url("../img/x.jpg");
@@ -55,6 +57,49 @@ overflow-y: scroll;
   z-index: 40;
 }
 
+
+
+.galia_png {
+  background-image: url("../img/mapamundi-assets/galia.png");
+  opacity: 0.631;
+  position: absolute;
+  left: 879px;
+  top: 297px;
+  width: 380px;
+  height: 304px;
+  z-index: 100;
+}
+
+.troya_png {
+  background-image: url("../img/mapamundi-assets/troya.png");
+  opacity: 0.6;
+  position: absolute;
+  left: 1059px;
+  top: 371px;
+  width: 36px;
+  height: 30px;
+  z-index: 100;
+}
+.macedonia_png {
+  background-image: url("../img/mapamundi-assets/macedonia.png");
+  opacity: 0.62;
+  position: absolute;
+  left: 953px;
+  top: 297px;
+  width: 224px;
+  height: 216px;
+  z-index: 100;
+}
+.egipto_vs_hicsos_png {
+  background-image: url("../img/mapamundi-assets/egipto_vs_hicsos.png");
+  opacity: 0.62;
+  position: absolute;
+  left: 1005px;
+  top: 393px;
+  width: 254px;
+  height: 208px;
+  z-index: 100;
+}
 /*
 .primeros_siglos {
   position: absolute;
