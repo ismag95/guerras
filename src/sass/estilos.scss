@@ -11,10 +11,35 @@
   height: 50px;
   z-index: 50;
 }
-#menu {
-  border:3px solid red;
+
+#titulo{
+  color:white;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  font-size: 3em;
+  margin:0;
+  padding: 0;
 }
 
+#menu {
+  position: absolute;
+  border:3px solid red;
+  width: 100%;
+}
+ul {
+  border:2px solid green;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+
+}
+.opciones{
+  float: left;
+  border:2px solid blue;
+  width: 24%;
+  list-style: none;
+  margin:5px
+}
 
 /*
 .primeros_siglos {
