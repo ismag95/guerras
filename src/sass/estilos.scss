@@ -11,49 +11,10 @@
   height: 50px;
   z-index: 50;
 }
-#titulo{
-  @include posicion(fixed, 0,0);
-  text-align: center;
-  background-image: url("../img/titulo.png");
-  background-position: center;
-  right: 0;
-  height: 100px;
-  z-index: 50;
+#menu {
+  border:3px solid red;
+}
 
-}
-#antes{
-  background-image: url("../img/antes.jpg");
-  position: fixed;
-  top: 100px;
-left: 0;
-  background-position: center;
- width: 25%;
-  height: 50px;
-  z-index: 50;
-
-}
-#i{
-  background-image: url("../img/i.jpg");
-  @include menu (25%,50%);
-}
-#x{
-  background-image: url("../img/x.jpg");
-  @include menu (50%,25%);
-
-}
-#xxi{
-  background-image: url("../img/xxi.jpg");
-  @include menu (75%,0);
-
-}
-#mapa {
- @include posicion(fixed, 0,0);
-  right: 0;
-  bottom: 0;
-overflow-y: scroll;
-
-  z-index: 40;
-}
 
 /*
 .primeros_siglos {

@@ -1,59 +1,53 @@
-#titulo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  text-align: center;
-  background-image: url("../img/titulo.png");
-  background-position: center;
-  right: 0;
-  height: 100px;
-  z-index: 50; }
+#menu {
+  border: 3px solid red; }
 
-#antes {
-  background-image: url("../img/antes.jpg");
-  position: fixed;
-  top: 100px;
-  left: 0;
-  background-position: center;
-  width: 25%;
-  height: 50px;
-  z-index: 50; }
-
-#i {
-  background-image: url("../img/i.jpg");
-  position: fixed;
-  top: 100px;
-  left: 25%;
-  background-position: center;
-  right: 50%;
-  height: 50px;
-  z-index: 50; }
-
-#x {
-  background-image: url("../img/x.jpg");
-  position: fixed;
-  top: 100px;
-  left: 50%;
-  background-position: center;
-  right: 25%;
-  height: 50px;
-  z-index: 50; }
-
-#xxi {
-  background-image: url("../img/xxi.jpg");
-  position: fixed;
-  top: 100px;
-  left: 75%;
-  background-position: center;
-  right: 0;
-  height: 50px;
-  z-index: 50; }
-
-#mapa {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: scroll;
-  z-index: 40; }
+/*
+.primeros_siglos {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 7;
+}
+.galia_png {
+  background-image: url("galia.png");
+  opacity: 0.631;
+  position: absolute;
+  left: 879px;
+  top: 297px;
+  width: 380px;
+  height: 304px;
+  z-index: 6;
+}
+.troya_png {
+  background-image: url("troya.png");
+  opacity: 0.6;
+  position: absolute;
+  left: 1059px;
+  top: 371px;
+  width: 36px;
+  height: 30px;
+  z-index: 5;
+}
+.macedonia_png {
+  background-image: url("macedonia.png");
+  opacity: 0.62;
+  position: absolute;
+  left: 953px;
+  top: 297px;
+  width: 224px;
+  height: 216px;
+  z-index: 4;
+}
+.egipto_vs_hicsos_png {
+  background-image: url("egipto_vs_hicsos.png");
+  opacity: 0.62;
+  position: absolute;
+  left: 1005px;
+  top: 393px;
+  width: 254px;
+  height: 208px;
+  z-index: 3;
+}
+*/
