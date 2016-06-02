@@ -1,4 +1,8 @@
 #titulo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
   color: white;
   text-align: center;
   text-shadow: 2px 2px black;
@@ -7,7 +11,11 @@
   padding: 0; }
 
 #menu {
-  position: absolute;
+  position: fixed;
+  top: 50;
+  left: 0;
+  position: fixed;
+  top: 50px;
   border: 3px solid red;
   width: 100%; }
 
@@ -23,26 +31,6 @@ ul {
   width: 24%;
   list-style: none;
   margin: 5px; }
-
-<<<<<<< HEAD
-#xxi {
-  background-image: url("../img/xxi.jpg");
-  position: fixed;
-  top: 100px;
-  left: 75%;
-  background-position: center;
-  right: 0;
-  height: 50px;
-  z-index: 50; }
-
-#mapa {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: scroll;
-  z-index: 40; }
 
 .galia_png {
   background-image: url("../img/mapamundi-assets/galia.png");
@@ -84,8 +72,6 @@ ul {
   height: 208px;
   z-index: 100; }
 
-=======
->>>>>>> 49db0bf21d54ff30d18e4e79dc262219e6502b71
 /*
 .primeros_siglos {
   position: absolute;
