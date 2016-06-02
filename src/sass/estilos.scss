@@ -28,7 +28,7 @@ $negro_75: rgba(0, 0, 0, 0.75);
   margin:0;
   padding: 0;
   background-color:$negro_75 ;
-  border: solid 2px red;
+  border: solid 2px red
 
 }
 
@@ -101,6 +101,7 @@ ul {
   z-index: 100;
 }
 /*
+//********************************************MAPA ANTES SI*******************************
 .primeros_siglos {
   position: absolute;
   left: 0px;
@@ -149,4 +150,203 @@ ul {
   height: 208px;
   z-index: 3;
 }
+//***************************************MAPA SIGLO I*************************************
+.si_sx {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 14;
+}
+.arabes_png {
+  background-image: url("mapamundi-assets/arabes.png");
+  opacity: 0.612;
+  position: absolute;
+  left: 1083px;
+  top: 261px;
+  width: 174px;
+  height: 150px;
+  z-index: 13;
+}
+.rusia_png {
+  background-image: url("mapamundi-assets/rusia.png");
+  opacity: 0.569;
+  position: absolute;
+  left: 929px;
+  top: 251px;
+  width: 301px;
+  height: 179px;
+  z-index: 12;
+}
+.china_png {
+  background-image: url("mapamundi-assets/china.png");
+  opacity: 0.561;
+  position: absolute;
+  left: 1451px;
+  top: 357px;
+  width: 200px;
+  height: 138px;
+  z-index: 11;
+}
+.anglosajon_png {
+  background-image: url("mapamundi-assets/anglosajon.png");
+  opacity: 0.502;
+  position: absolute;
+  left: 877px;
+  top: 288px;
+  width: 774px;
+  height: 213px;
+  z-index: 10;
+}
+.roma_png {
+  background-image: url("mapamundi-assets/roma.png");
+  opacity: 0.6;
+  position: absolute;
+  left: 871px;
+  top: 264px;
+  width: 354px;
+  height: 175px;
+  z-index: 9;
+}
+
+
+//***************************************MAPA SIGLOS X************************************
+.sx_sxix {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 19;
+}
+.cruzada_png {
+  background-image: url("mapamundi-assets/cruzada.png");
+  opacity: 0.651;
+  position: absolute;
+  left: 912px;
+  top: 297px;
+  width: 284px;
+  height: 213px;
+  z-index: 18;
+}
+.inca_png {
+  background-image: url("mapamundi-assets/inca.png");
+  opacity: 0.6;
+  position: absolute;
+  left: 425px;
+  top: 618px;
+  width: 102px;
+  height: 217px;
+  z-index: 17;
+}
+.boshin_png {
+  background-image: url("mapamundi-assets/boshin.png");
+  opacity: 0.42;
+  position: absolute;
+  left: 1671px;
+  top: 347px;
+  width: 74px;
+  height: 88px;
+  z-index: 16;
+}
+//***************************************PRIMERA GUERRA MUNDIAL****************************
+.primera_guerra {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 22;
+}
+.primera_png {
+  background-image: url("mapamundi-assets/primera.png");
+  opacity: 0.6;
+  position: absolute;
+  left: 925px;
+  top: 291px;
+  width: 285px;
+  height: 162px;
+  z-index: 21;
+}
+//***************************************SEGUNDA GUERRA MUNDIAL*****************************
+.segunda_guerra {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 25;
+}
+.segunda_png {
+  background-image: url("mapamundi-assets/segunda.png");
+  opacity: 0.588;
+  position: absolute;
+  left: 805px;
+  top: 249px;
+  width: 1115px;
+  height: 428px;
+  z-index: 24;
+}
+
+
+//***************************************MAPA SIGLO XXI************************************
+.sxxi {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 32;
+}
+.yemen_png {
+  background-image: url("mapamundi-assets/yemen.png");
+  opacity: 0.651;
+  position: absolute;
+  left: 1151px;
+  top: 501px;
+  width: 96px;
+  height: 40px;
+  z-index: 31;
+}
+.libia_png {
+  background-image: url("mapamundi-assets/libia.png");
+  opacity: 0.639;
+  position: absolute;
+  left: 949px;
+  top: 415px;
+  width: 80px;
+  height: 72px;
+  z-index: 30;
+}
+.somalia_png {
+  background-image: url("mapamundi-assets/somalia.png");
+  opacity: 0.62;
+  position: absolute;
+  left: 1105px;
+  top: 527px;
+  width: 104px;
+  height: 126px;
+  z-index: 29;
+}
+.kivu_png {
+  background-image: url("mapamundi-assets/kivu.png");
+  opacity: 0.671;
+  position: absolute;
+  left: 1053px;
+  top: 647px;
+  width: 82px;
+  height: 82px;
+  z-index: 28;
+}
+.siria_png {
+  background-image: url("mapamundi-assets/siria.png");
+  position: absolute;
+  left: 1097px;
+  top: 397px;
+  width: 86px;
+  height: 255px;
+  z-index: 27;
+}
+
 */
