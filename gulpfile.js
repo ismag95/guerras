@@ -21,8 +21,8 @@ gulp.task('minify', function() {
 });
 
 gulp.task('guerraswatch', function () {
-  gulp.watch('./src/*.html', ['minify']);
-  gulp.watch('./src/sass/**/*.scss', ['sass']);
+  gulp.watch('./src/*.html', ['minify',browserSync.reload]);
+  gulp.watch('./src/sass/**/*.scss', ['sass',browserSync.reload]);
 });
 
 gulp.task('browser-sync', function() {
