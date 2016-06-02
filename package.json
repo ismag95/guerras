@@ -5,17 +5,27 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Ismael Gatón",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.12.10",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^2.0.0",
     "gulp-imagemin": "^3.0.1",
     "gulp-sass": "^2.3.1",
+    "gulp-watch": "^4.3.6",
     "sass": "^0.5.0"
   },
   "dependencies": {
     "imagemin-webp": "^3.1.1"
   },
-  "description": ""
+  "description": "trabajoasirLMSGI-guerras",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismag95/guerras.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ismag95/guerras/issues"
+  },
+  "homepage": "https://github.com/ismag95/guerras#readme"
 }

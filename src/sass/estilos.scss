@@ -11,50 +11,34 @@
   height: 50px;
   z-index: 50;
 }
+
 #titulo{
-  @include posicion(fixed, 0,0);
+  color:white;
   text-align: center;
-  background-image: url("../img/titulo.png");
-  background-position: center;
-  right: 0;
-  height: 100px;
-  z-index: 50;
+  text-shadow: 2px 2px black;
+  font-size: 3em;
+  margin:0;
+  padding: 0;
+}
+
+#menu {
+  position: absolute;
+  border:3px solid red;
+  width: 100%;
+}
+ul {
+  border:2px solid green;
+  position: absolute;
+  width: 100%;
+  padding: 0;
 
 }
-#antes{
-  background-image: url("../img/antes.jpg");
-  position: fixed;
-  top: 100px;
-left: 0;
-  background-position: center;
- width: 25%;
-  height: 50px;
-  z-index: 50;
-
-
-}
-#i{
-  background-image: url("../img/i.jpg");
-  @include menu (25%,50%);
-
-}
-#x{
-  background-image: url("../img/x.jpg");
-  @include menu (50%,25%);
-
-}
-#xxi{
-  background-image: url("../img/xxi.jpg");
-  @include menu (75%,0);
-
-}
-#mapa {
- @include posicion(fixed, 0,0);
-  right: 0;
-  bottom: 0;
-overflow-y: scroll;
-
-  z-index: 40;
+.opciones{
+  float: left;
+  border:2px solid blue;
+  width: 24%;
+  list-style: none;
+  margin:5px
 }
 
 
