@@ -1,8 +1,11 @@
 //*****************************************MIXINS*******************************************/
-@mixin posicion ($p, $t, $l){
+@mixin posicion ($p, $t, $l, $r){
   position: $p;
   top:$t;
   left: $l;
+  right: $r;
+  text-align: center;
+
 
 }
 @mixin menu ($l, $r){
@@ -13,42 +16,52 @@
   z-index: 50;
 }
 //*************************************VARIABLES*****************************************/
-$negro_75=(#040404);
+$negro_75: #040404;
 //***********************************ESTILOS********************************************/
 #titulo{
-@include posicion (fixed,0,0);
+@include posicion (fixed,0,0,0);
   height: 50px;
   color:white;
- background-color:rgba($negro_75);
   font-size: 3em;
   margin:0;
   padding: 0;
+  background-color:$negro_75;
+  border: solid 2px red;
+
 }
 
 #menu {
-  @include posicion(fixed, 50,0);
+  @include posicion(fixed, 50px,0,0);
   position: fixed;
-  top:50px;
-  border:3px solid red;
   width: 100%;
+  height: 50px;
+  background-color:$negro_75;
+ 
+  margin:0;
+  padding: 0;
+
 }
 ul {
-  border:2px solid green;
   position: absolute;
   width: 100%;
   padding: 0;
+  background-color:$negro_75;
+  color:white;
 
+  margin:0;
+  padding: 0;
 }
 .opciones{
   float: left;
   border:2px solid blue;
-  width: 24%;
+  width: 24.5%;
+  height: 50px;
   list-style: none;
-  margin:5px
+  margin:0;
 }
 
 
-
+//****************************************MAPAS DE IMAGENES**************************************/
 .galia_png {
   background-image: url("../img/mapamundi-assets/galia.png");
   opacity: 0.631;
