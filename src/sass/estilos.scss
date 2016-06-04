@@ -1,3 +1,6 @@
+//FUENTES/
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
 //*****************************************MIXINS*******************************************/
 @mixin posicion ($p, $t, $l, $r){
   position: $p;
@@ -52,22 +55,20 @@ $negro_75: rgba(0, 0, 0, 0.75);
 //**********************************TITULO Y MENU***************************************/
 
 #titulo{
-@include posicion (fixed,0,0,0);
-  height: 50px;
+  font-family: 'Kaushan Script', cursive;
+  @include posicion (fixed,0,0,0);
   color:white;
   font-size: 3em;
   margin:0;
   padding: 0;
-  background-color:$negro_75 ;
-  border: solid 2px red
-
+  background-color:$negro_75;
 }
-
 #menu {
-  @include posicion(fixed, 50px,0,0);
+  font-family: 'Kaushan Script', cursive;
+  @include posicion(fixed, 70px,0,0);
   width: 100%;
   height: 50px;
-  background-color:$negro_75;
+
   margin:0;
   padding: 0;
 
@@ -79,6 +80,17 @@ ul {
   color:white;
   margin:0;
 }
+li{
+  background-color:black;
+  float: left;
+  width: 25%;
+  height: 50px;
+  list-style: none;
+  margin:0;
+  font-size: 2em;
+  }
+//****************************************MAPAS DE IMAGENES**************************************/
+
 .opciones{
 @include opciones(24.4%);
 }
@@ -193,7 +205,101 @@ ul {
                   border: solid 1px blue;
                 }
 //***************************************PRIMERA GUERRA MUNDIAL****************************
-
+.primera_guerra {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 22;
+}
+.primera_png {
+  background-image: url("mapamundi-assets/primera.png");
+  opacity: 0.6;
+  position: absolute;
+  left: 925px;
+  top: 291px;
+  width: 285px;
+  height: 162px;
+  z-index: 21;
+}
+//***************************************SEGUNDA GUERRA MUNDIAL*****************************
+.segunda_guerra {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 25;
+}
+.segunda_png {
+  background-image: url("mapamundi-assets/segunda.png");
+  opacity: 0.588;
+  position: absolute;
+  left: 805px;
+  top: 249px;
+  width: 1115px;
+  height: 428px;
+  z-index: 24;
+}
+//***************************************MAPA SIGLO XXI************************************
+.sxxi {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 32;
+}
+.yemen_png {
+  background-image: url("mapamundi-assets/yemen.png");
+  opacity: 0.651;
+  position: absolute;
+  left: 1151px;
+  top: 501px;
+  width: 96px;
+  height: 40px;
+  z-index: 31;
+}
+.libia_png {
+  background-image: url("mapamundi-assets/libia.png");
+  opacity: 0.639;
+  position: absolute;
+  left: 949px;
+  top: 415px;
+  width: 80px;
+  height: 72px;
+  z-index: 30;
+}
+.somalia_png {
+  background-image: url("mapamundi-assets/somalia.png");
+  opacity: 0.62;
+  position: absolute;
+  left: 1105px;
+  top: 527px;
+  width: 104px;
+  height: 126px;
+  z-index: 29;
+}
+.kivu_png {
+  background-image: url("mapamundi-assets/kivu.png");
+  opacity: 0.671;
+  position: absolute;
+  left: 1053px;
+  top: 647px;
+  width: 82px;
+  height: 82px;
+  z-index: 28;
+}
+.siria_png {
+  background-image: url("mapamundi-assets/siria.png");
+  position: absolute;
+  left: 1097px;
+  top: 397px;
+  width: 86px;
+  height: 255px;
+  z-index: 27;
+}
                 #primera_png {
                   @include imagenes(url("../img/mapamundi-assets/primera.png"),925px,291px,285px,162px);
                 display: none;
