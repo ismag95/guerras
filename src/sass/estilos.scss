@@ -68,9 +68,7 @@ $negro_75: rgba(0, 0, 0, 0.75);
   @include posicion(fixed, 70px,0,0);
   width: 100%;
   height: 50px;
-
-  margin:0;
-  padding: 0;
+border: solid 1px black;
 
 }
 ul {
@@ -81,7 +79,7 @@ ul {
   margin:0;
 }
 li{
-  background-color:black;
+  background-color:$negro_75;
   float: left;
   width: 25%;
   height: 50px;
@@ -111,16 +109,18 @@ li{
   display: none;
 }
 //****************************************MAPAS DE IMAGENES**************************************/
-  #mapamundi_png {
+  .mapamundi_png {
     background-image: url("../img/mapamundi-assets/mapamundi.png");
     position: absolute;
     left: 0;
     top: 0;
     width: 1920px;
     height: 1080px;
-    z-index: 1;}
+    z-index: 1;
 
-     #primeros_siglos {
+  }
+
+     .primeros_siglos {
        position: absolute;
        left: 0;
        top: 0;
@@ -130,26 +130,26 @@ li{
        display: none;
 
       }
-                #galia_png {
+                .galia_png {
                   @include imagenes(url("../img/mapamundi-assets/galia.png"), 879px, 297px, 70px,70px );
                   border: solid 1px blue;
                 }
 
-                #troya_png {
+                .troya_png {
                   @include imagenes(url("../img/mapamundi-assets/troya.png"), 1059px, 371px, 36px,30px);
                   border: solid 1px blue;
                 }
-                #macedonia_png {
+                .macedonia_png {
                   @include imagenes(url("../img/mapamundi-assets/macedonia.png"),1019px,363px,42px,36px);
                   border: solid 1px blue;
                   }
 
-                #egipto_vs_hicsos_png {
+                .egipto_vs_hicsos_png {
                   @include imagenes(url("../img/mapamundi-assets/egipto_vs_hicsos.png"), 1005px, 393px, 210px, 210px);
                   border: solid 1px blue;
                 }
 //***************************************MAPA SIGLO I*************************************
-      #mapasi {
+      .mapasi {
         position: absolute;
         left: 0;
         top: 0;
@@ -158,30 +158,30 @@ li{
         z-index: 14;
         display: none;
       }
-                #arabes_png {
+                .arabes_png {
                   @include imagenes(url("../img/mapamundi-assets/arabes.png"),  1083px,  261px, 159px, 150px);
                  background-image: url("../img/mapamundi-assets/arabes.png");
                   border: solid 1px red;
                 }
-                #rusia_png {
+                .rusia_png {
                   @include imagenes(url("../img/mapamundi-assets/rusia.png"), 929px, 251px,301px, 179px );
                   border: solid 1px blue;
                 }
-                #china_png {
+                .china_png {
                   @include imagenes(url("../img/mapamundi-assets/china.png"),  1451px, 357px,200px,138px);
                   border: solid 1px green;
                 }
-                #anglosajon_png {
+                .anglosajon_png {
                   @include imagenes(url("../img/../img/mapamundi-assets/anglosajon.png"),877px,288px,40px,30px);
                   border: solid 1px black;
                 }
-                #roma_png {
+                .roma_png {
                   @include imagenes(url("../img/mapamundi-assets/roma.png"),871px,264px,50px,50px);
 
                   border: solid 1px blue;
                 }
 //***************************************MAPA SIGLOS X************************************
-      #mapasx {
+      .mapasx {
         position: absolute;
         left: 0;
         top: 0;
@@ -190,50 +190,36 @@ li{
         z-index: 19;
         display: none;
       }
-                #cruzada_png {
+                .cruzada_png {
                   @include imagenes(url("../img/mapamundi-assets/cruzada.png"), 912px, 297px, 284px,213px);
                   border: solid 1px blue;
 
                 }
-                #inca_png {
+                .inca_png {
                   @include imagenes(url("../img/mapamundi-assets/inca.png"), 425px, 618px, 102px,217px);
                   border: solid 1px blue;
 
                 }
-                #boshin_png {
+                .boshin_png {
                   @include imagenes(url("../img/mapamundi-assets/boshin.png"),1671px,347px,74px,88px);
                   border: solid 1px blue;
                 }
 //***************************************PRIMERA GUERRA MUNDIAL****************************
-.primera_guerra {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 1080px;
-  z-index: 22;
-}
+
 .primera_png {
-  background-image: url("mapamundi-assets/primera.png");
+  background-image: url("../img/mapamundi-assets/primera.png");
   opacity: 0.6;
   position: absolute;
   left: 925px;
   top: 291px;
   width: 285px;
   height: 162px;
-  z-index: 21;
+  z-index: 50;
+  display: none;
 }
 //***************************************SEGUNDA GUERRA MUNDIAL*****************************
-.segunda_guerra {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 1080px;
-  z-index: 25;
-}
 .segunda_png {
-  background-image: url("mapamundi-assets/segunda.png");
+  background-image: url("../img/mapamundi-assets/segunda.png");
   opacity: 0.588;
   position: absolute;
   left: 805px;
@@ -241,18 +227,19 @@ li{
   width: 1115px;
   height: 428px;
   z-index: 24;
+  display: none;
 }
 //***************************************MAPA SIGLO XXI************************************
 .sxxi {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 1920px;
   height: 1080px;
   z-index: 32;
 }
 .yemen_png {
-  background-image: url("mapamundi-assets/yemen.png");
+  background-image: url("../img/mapamundi-assets/yemen.png");
   opacity: 0.651;
   position: absolute;
   left: 1151px;
@@ -262,7 +249,7 @@ li{
   z-index: 31;
 }
 .libia_png {
-  background-image: url("mapamundi-assets/libia.png");
+  background-image: url("../img/mapamundi-assets/libia.png");
   opacity: 0.639;
   position: absolute;
   left: 949px;
@@ -272,7 +259,7 @@ li{
   z-index: 30;
 }
 .somalia_png {
-  background-image: url("mapamundi-assets/somalia.png");
+  background-image: url("../img/mapamundi-assets/somalia.png");
   opacity: 0.62;
   position: absolute;
   left: 1105px;
@@ -282,7 +269,7 @@ li{
   z-index: 29;
 }
 .kivu_png {
-  background-image: url("mapamundi-assets/kivu.png");
+  background-image: url("../img/mapamundi-assets/kivu.png");
   opacity: 0.671;
   position: absolute;
   left: 1053px;
@@ -292,7 +279,7 @@ li{
   z-index: 28;
 }
 .siria_png {
-  background-image: url("mapamundi-assets/siria.png");
+  background-image: url("../img/mapamundi-assets/siria.png");
   position: absolute;
   left: 1097px;
   top: 397px;
@@ -347,6 +334,7 @@ li{
   height: 80%;
   z-index: 500;
   border: solid 1px red;
+  display: none;
 }
     #egipto_texto {
       @include posicion(absolute, 5%, 5%, 50%);
@@ -360,8 +348,8 @@ li{
 
     }
     #egipto_vs_hicsos_jpg{
-      background-image: url("../img/egipto/armas_egipto.jpg");
       @include posicion(absolute, 5%,50%,5%);
+      background-image: url("../img/egipto/armas_egipto.jpg");
       background-repeat: no-repeat ;
       background-size: cover;
       height: 90%;
