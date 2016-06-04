@@ -1,3 +1,6 @@
+//FUENTES/
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
 //*****************************************MIXINS*******************************************/
 @mixin posicion ($p, $t, $l, $r){
   position: $p;
@@ -21,23 +24,19 @@ $negro_75: rgba(0, 0, 0, 0.75);
 //**********************************TITULO Y MENU***************************************/
 
 #titulo{
-@include posicion (fixed,0,0,0);
-  height: 50px;
+  font-family: 'Kaushan Script', cursive;
+  @include posicion (fixed,0,0,0);
   color:white;
   font-size: 3em;
   margin:0;
   padding: 0;
-  background-color:$negro_75 ;
-  border: solid 2px red
-
+  background-color:$negro_75;
 }
-
 #menu {
-  @include posicion(fixed, 50px,0,0);
+  font-family: 'Kaushan Script', cursive;
+  @include posicion(fixed, 70px,0,0);
   width: 100%;
   height: 50px;
-  background-color:$negro_75;
-
   margin:0;
   padding: 0;
 
@@ -46,18 +45,18 @@ ul {
   position: absolute;
   width: 100%;
   padding: 0;
-  background-color:$negro_75;
   color:white;
   margin:0;
 }
-.opciones{
+li{
+  background-color:black;
   float: left;
-  border:2px solid blue;
-  width: 24.5%;
+  width: 25%;
   height: 50px;
   list-style: none;
   margin:0;
-}
+  font-size: 2em;
+  }
 //****************************************MAPAS DE IMAGENES**************************************/
 .galia_png {
   background-image: url("../img/mapamundi-assets/galia.png");
@@ -209,8 +208,6 @@ ul {
   height: 175px;
   z-index: 9;
 }
-
-
 //***************************************MAPA SIGLOS X************************************
 .sx_sxix {
   position: absolute;
@@ -288,8 +285,6 @@ ul {
   height: 428px;
   z-index: 24;
 }
-
-
 //***************************************MAPA SIGLO XXI************************************
 .sxxi {
   position: absolute;
@@ -348,5 +343,4 @@ ul {
   height: 255px;
   z-index: 27;
 }
-
 */
