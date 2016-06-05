@@ -10,7 +10,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task ('copy-img', function () {
-  return gulp.src ('src/img/*')
+  return gulp.src ('src/img/*/*/*/*')
       .pipe (gulp.dest ('./dest/img/'));
 });
 

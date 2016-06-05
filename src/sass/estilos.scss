@@ -129,7 +129,7 @@ ul {
 
                 .troya_png {
                   @include imagenes(url("../img/mapamundi-assets/troya.png"), 1059px, 371px, 36px,30px);
-                  border: solid 1px blue;
+                  border: 3px solid blue;
                 }
                 .macedonia_png {
                   @include imagenes(url("../img/mapamundi-assets/macedonia.png"),1019px,363px,42px,36px);
@@ -317,7 +317,9 @@ ul {
                   @include imagenes(url("../img/mapamundi-assets/siria.png"),1097px,397px,86px,50px);
                 }
 //************************************SUBPAGINAS**********************************
-
+.informacion{
+  display: none;
+}
 #egipto_vs_hicsos{
 
 }
