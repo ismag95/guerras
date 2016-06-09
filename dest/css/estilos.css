@@ -11,19 +11,18 @@
   font-size: 3em;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.75); }
+  background-color: rgba(81, 15, 0, 0.75); }
 
 #menu {
   font-family: 'Kaushan Script', cursive;
   position: fixed;
-  top: 75px;
+  top: 70px;
   left: 0;
   right: 0;
   text-align: center;
   z-index: 500;
   width: 100%;
   height: 53px;
-  border: solid 1px black;
   margin: 0; }
 
 ul {
@@ -34,40 +33,81 @@ ul {
   margin: 0; }
 
 .opciones {
-  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px 5px;
+  background-color: rgba(81, 15, 0, 0.75);
   display: inline-block;
-  width: 24.4%;
+  width: 24%;
+  height: 50px;
+  font-size: 2em;
+  list-style: none;
+  padding: 0;
+  line-height: 50px;
+  z-index: 500; }
+
+.opciones_p {
+  border-radius: 5px 5px;
+  background-color: rgba(81, 15, 0, 0.75);
+  display: inline-block;
+  width: 24%;
   height: 50px;
   font-size: 2em;
   list-style: none;
   margin: 0;
+  margin-right: 0.5%;
+  margin-top: 5px;
   padding: 0;
   line-height: 50px;
   z-index: 500; }
 
 .opciones_5c {
-  background-color: black;
+  border-radius: 5px 5px;
+  background-color: rgba(81, 15, 0, 0.75);
   display: inline-block;
-  width: 19.4%;
+  width: 24%;
   height: 50px;
   font-size: 2em;
   list-style: none;
   margin: 0;
+  margin-right: 0.5%;
+  margin-top: 5px;
   padding: 0;
   line-height: 50px;
   z-index: 500; }
 
 .opciones_esp {
-  background-color: black;
+  border-radius: 5px 5px;
+  background-color: rgba(81, 15, 0, 0.75);
   display: inline-block;
-  width: 19.4%;
+  width: 24%;
   height: 50px;
   font-size: 2em;
   list-style: none;
   margin: 0;
+  margin-right: 0.5%;
+  margin-top: 5px;
   padding: 0;
   line-height: 50px;
   z-index: 500; }
+
+.opciones_xx1 {
+  border-radius: 5px 5px;
+  background-color: rgba(81, 15, 0, 0.75);
+  display: inline-block;
+  width: 24%;
+  height: 50px;
+  font-size: 2em;
+  list-style: none;
+  margin: 0;
+  margin-right: 0.5%;
+  margin-top: 5px;
+  padding: 0;
+  line-height: 50px;
+  z-index: 500; }
+
+.submenu {
+  display: none; }
 
 #menu_antes {
   position: fixed;
@@ -78,11 +118,22 @@ ul {
   z-index: 500;
   width: 100%;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: transparent;
   margin: 0;
   padding: 0;
   z-index: 500;
-  display: none; }
+  position: fixed;
+  margin-top: 1.5%;
+  left: 1.75%;
+  width: 24%;
+  height: auto; }
+
+#menu_antes button {
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  display: inline-block;
+  width: 100%; }
 
 #menu_si {
   position: fixed;
@@ -93,12 +144,74 @@ ul {
   z-index: 500;
   width: 100%;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: transparent;
   margin: 0;
   padding: 0;
   z-index: 500;
-  font-size: 10px;
-  display: none; }
+  position: fixed;
+  margin-top: 1.5%;
+  left: 26%;
+  width: 24%;
+  height: auto; }
+
+#menu_si button {
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  display: inline-block;
+  width: 100%; }
+
+#menu_sx {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 500;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  z-index: 500;
+  position: fixed;
+  margin-top: 1.5%;
+  left: 50.2%;
+  width: 24%;
+  height: auto; }
+
+#menu_sx button {
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  display: inline-block;
+  width: 100%; }
+
+#menu_sxx1 {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 500;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  z-index: 500;
+  position: fixed;
+  margin-top: 1.5%;
+  left: 74.5%;
+  width: 24%;
+  height: auto; }
+
+#menu_sxx1 button {
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  display: inline-block;
+  width: 100%; }
 
 .mapamundi_png {
   background-image: url("../img/mapamundi-assets/mapamundi.png");
@@ -453,7 +566,7 @@ ul {
   right: 50%;
   text-align: center;
   z-index: 500;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(81, 15, 0, 0.75);
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
   border: solid 1px RED;

@@ -8,42 +8,36 @@
 <body>
 <header>
     <h1 id="titulo">GUERRAS</h1>
-    <nav id="menu">
-        <ul>
-            <li class="opciones" id="antes"> Antes del s.I</li>
-            <li class="opciones" id="i"> s.I - s.X</li>
-            <li class="opciones" id="x"> s.X - s.XX</li>
-            <li class="opciones" id="xxi"> s.XXI</li>
-        </ul>
-    </nav>
-    <div id="menu_antes">
-        <ul>
-            <li class="opciones">Campaña de Tutmosis I(1520 a.C)</li>
-            <li class="opciones">Conquista de las Galias (58 a.C)</li>
-            <li class="opciones">Guerra de Macedonia (200 a.C)</li>
-            <li class="opciones">Guerra de troya (1260 a.c)</li>
-        </ul>
+    <div id="menu">
+            <button class="opciones" id="antes">Antes del s.I</button>
+            <button class="opciones" id="i">s.I - s.X</button>
+            <button class="opciones" id="x">s.X - s.XX</button>
+            <button class="opciones" id="xxi">s.XXI</button>
     </div>
-    <div id="menu_si">
-        <ul>
-            <li class="opciones_5c" >Conquista Romana de Britania (43 d.C)</li>
-            <li class="opciones_5c" >Revelion de los Turbantes amarillos(184)</li>
-            <li class="opciones_5c" >Guerras Jazaró - Árabes(642)</li>
-            <li class="opciones_5c" >Guerra Ruso - Bizantina (941)</li>
-            <li class="opciones_5c" >Invasion Anglosajona de Gran Bretaña(s.V)</li>
-        </ul>
+    <div id="menu_antes" class="submenu">
+            <button class="opciones_p">Campaña de Tutmosis I(1520 a.C)</button>
+            <button class="opciones_p">Conquista de las Galias (58 a.C)</button>
+            <button class="opciones_p">Guerra de Macedonia (200 a.C)</button>
+            <button class="opciones_p">Guerra de troya (1260 a.c)</button>
     </div>
-    <div id="menu_sx">
-        <ul>
-            <li class="opciones_esp">s.X-s.XIX</li>
-            <li class="opciones_esp">Primera Guerra</li>
-            <li class="opciones_esp">Segunda Guerra</li>
-        </ul>
+    <div id="menu_si" class="submenu">
+            <button class="opciones_5c" >Conquista Romana de Britania (43 d.C)</button>
+            <button class="opciones_5c" >Revelion de los Turbantes amarillos(184)</button>
+            <button class="opciones_5c" >Guerras Jazaró - Árabes(642)</button>
+            <button class="opciones_5c" >Guerra Ruso - Bizantina (941)</button>
+            <button class="opciones_5c" >Invasion Anglosajona (s.V)</button>
     </div>
-    <div>
-        <ul>
-
-        </ul>
+    <div id="menu_sx" class="submenu">
+            <button class="opciones_esp">s.X-s.XIX</button>
+            <button class="opciones_esp">Primera Guerra</button>
+            <button class="opciones_esp">Segunda Guerra</button>
+    </div>
+    <div id="menu_sxx1" class="submenu">
+        <button class="opciones_xx1">Guerra civil siria(2011)</button>
+        <button class="opciones_xx1">Guerra civil somali (2006-2009)</button>
+        <button class="opciones_xx1">Guerra de Kivu (2004-2009)</button>
+        <button class="opciones_xx1">Guerra de Libia (2011)</button>
+        <button class="opciones_xx1">Insurgencia chiita en Yemen (2004-2015)</button>
     </div>
 </header>
 <section>
@@ -888,5 +882,51 @@
         </article>
     </div>
 </section>
+<script src="jquery-2.2.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#antes").on("dblclick",function () {
+            $("#menu_antes").css("display","block");
+            $("#menu_si").css("display","none");
+            $("#menu_sx").css("display","none");
+            $("#menu_sxx1").css("display","none");
+        });
+        $("#antes").on("click",function () {
+            $("#menu_antes").css("display","none");
+        });
+        $("#i").on("dblclick",function () {
+            $("#menu_si").css("display","block");
+            $("#menu_antes").css("display","none");
+            $("#menu_sx").css("display","none");
+            $("#menu_sxx1").css("display","none");
+        });
+        $("#i").on("click",function () {
+            $("#menu_si").css("display","none");
+        });
+        $("#x").on("dblclick",function () {
+            $("#menu_sx").css("display","block");
+            $("#menu_antes").css("display","none");
+            $("#menu_si").css("display","none");
+            $("#menu_sxx1").css("display","none");
+        });
+        $("#x").on("click",function () {
+            $("#menu_sx").css("display","none");
+        });
+        $("#xxi").on("dblclick",function () {
+            $("#menu_sxx1").css("display","block");
+            $("#menu_antes").css("display","none");
+            $("#menu_si").css("display","none");
+            $("#menu_sx").css("display","none");
+        });
+        $("#xxi").on("click",function () {
+            $("#menu_sxx1").css("display","none");
+        });
+    });
+</script>
+
+
+<!--
+
+-->
 </body>
 </html>
