@@ -182,7 +182,24 @@ ul {
   width: 100%;
 }
 
+//************************************BOTON VOLVER**************************/
+#volver{
+  display: none;
+}
+#volver button{
+  @include posicion (fixed, 90%, 0, 0);
+  border-radius: 5px 5px;
+  font-size: 2em;
+  list-style: none;
+  margin:0;
+  margin-right:0.5%;
+  margin-top: 5px;
+  padding: 0;
+  line-height: 50px;
+  z-index: 500;
+  height: 10%;
 
+}
 
 
 //****************************************MAPAS DE IMAGENES**************************************/
@@ -314,6 +331,7 @@ ul {
   width: 1920px;
   height: 1080px;
   z-index: 32;
+  display: none;
 }
 .yemen_png {
   background-image: url("../img/mapamundi-assets/yemen.png");
@@ -324,6 +342,7 @@ ul {
   width: 96px;
   height: 40px;
   z-index: 31;
+  border: solid 1px blue;
 }
 .libia_png {
   background-image: url("../img/mapamundi-assets/libia.png");
@@ -334,6 +353,7 @@ ul {
   width: 80px;
   height: 72px;
   z-index: 30;
+  border: solid 1px blue;
 }
 .somalia_png {
   background-image: url("../img/mapamundi-assets/somalia.png");
@@ -344,6 +364,7 @@ ul {
   width: 104px;
   height: 126px;
   z-index: 29;
+  border: solid 1px blue;
 }
 .kivu_png {
   background-image: url("../img/mapamundi-assets/kivu.png");
@@ -354,6 +375,7 @@ ul {
   width: 82px;
   height: 82px;
   z-index: 28;
+  border: solid 1px blue;
 }
 .siria_png {
   background-image: url("../img/mapamundi-assets/siria.png");
@@ -361,9 +383,11 @@ ul {
   left: 1097px;
   top: 397px;
   width: 86px;
-  height: 255px;
+  height: 50px;
   z-index: 27;
+  border: solid 1px blue;
 }
+
                 #primera_png {
                   @include imagenes(url("../img/mapamundi-assets/primera.png"),925px,291px,285px,162px);
                 display: none;
@@ -374,39 +398,42 @@ ul {
                 display: none;
                 }
 
-//***************************************MAPA SIGLO XXI************************************
-          #sxxi {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 1920px;
-            height: 1080px;
-            z-index: 32;
-            display: none;
-          }
-                #yemen_png {
-                    @include imagenes(url("../img/mapamundi-assets/yemen.png"),1151px,501px,96px,40px);
-                }
-                #libia_png {
-                  @include imagenes(url("../img/mapamundi-assets/libia.png"),949px,415px,80px,72px);
-                }
-                #somalia_png {
-                  @include imagenes(url("../img/mapamundi-assets/somalia.png"),1105px,527px,104px,126px);
 
-
-                }
-                #kivu_png {
-                  @include imagenes(url("../img/mapamundi-assets/kivu.png"),1053px,647px,50px,50px);
-                }
-                #siria_png {
-                  @include imagenes(url("../img/mapamundi-assets/siria.png"),1097px,397px,86px,50px);
-                }
 //************************************SUBPAGINAS**********************************
 .informacion{
   display: none;
 }
-#egipto_vs_hicsos{
+//************************************ANTES SI***********************************
+//***********************************EGIPTO*************************************
+#egipto_vs_hicsos_html{
+  background-image: url("../img/egipto/fondo_egipto.png");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: cover;
 
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#egipto_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+
+}
+#egipto_vs_hicsos_jpg{
+  @include posicion(absolute, 5%,50%,5%);
+  background-image: url("../img/egipto/armas_egipto.jpg");
+  background-repeat: no-repeat ;
+  background-size: cover;
+  height: 90%;
+  width: 45%;
+  border: solid 1px yellow;
 }
 
 #Conquita_galias{
@@ -490,34 +517,3 @@ ul {
 
 }
 
-//************************************ANTES SI***********************************
-//***********************************EGIPTO*************************************
-#egipto_vs_hicsos_html{
-  background-image: url("../img/egipto/fondo_egipto.png");
- @include posicion (fixed, 10%,10%,10%);
-  background-size: cover;
-  height: 80%;
-  z-index: 500;
-  border: solid 1px red;
-  display: none;
-}
-    #egipto_texto {
-      @include posicion(absolute, 5%, 5%, 50%);
-      background-color: $negro_75;
-      color: rgba(255, 217, 67, 0.76);
-      font-size: 1.2em;
-      border: solid 1px RED;
-      height: 90%;
-      overflow: hidden;
-      overflow-y: scroll;
-
-    }
-    #egipto_vs_hicsos_jpg{
-      @include posicion(absolute, 5%,50%,5%);
-      background-image: url("../img/egipto/armas_egipto.jpg");
-      background-repeat: no-repeat ;
-      background-size: cover;
-      height: 90%;
-      width: 45%;
-      border: solid 1px yellow;
-    }
