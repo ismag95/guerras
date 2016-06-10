@@ -17,7 +17,7 @@
     <div id="menu_antes" class="submenu">
             <button class="opciones_p" id="egipto_enlace">Campaña de Tutmosis I(1520 a.C)</button>
             <button class="opciones_p" id="galia_enlace">Conquista de las Galias (58 a.C)</button>
-            <button class="opciones_p" id="macedonia_enlace">Guerra de Macedonia (200 a.C)</button>
+            <button class="opciones_p" id="mace_enlace">Guerra de Macedonia (200 a.C)</button>
             <button class="opciones_p" id="troya_enlace">Guerra de troya (1260 a.c)</button>
     </div>
     <div id="menu_si" class="submenu">
@@ -1037,11 +1037,19 @@
             antes=true;
         });
     });
-<!--boton galia-->
+        <!--boton galia-->
         $("#galia_enlace").on("mousedown",function () {
             $(".egipto_vs_hicsos_png").css("display","none");
             $(".galia_png").css("display","block");
             $(".macedonia_png").css("display","none");
+            $(".troya_png").css("display","none");
+        });
+
+        <!--boton macedoia-->
+        $("#mace_enlace").on("mousedown",function () {
+            $(".egipto_vs_hicsos_png").css("display","none");
+            $(".galia_png").css("display","none");
+            $(".macedonia_png").css("display","block");
             $(".troya_png").css("display","none");
         });
         <!--boton troya-->
@@ -1050,14 +1058,9 @@
             $(".galia_png").css("display","none");
             $(".macedonia_png").css("display","none");
             $(".troya_png").css("display","block");
+
         });
-        <!--boton macedoia-->
-        $("#macedonia_enlacea").on("mousedown",function () {
-            $(".egipto_vs_hicsos_png").css("display","none");
-            $(".galia_png").css("display","none");
-            $(".macedonia_png").css("display","block");
-            $(".troya_png").css("display","none");
-        });
+
     });
 
 </script>
