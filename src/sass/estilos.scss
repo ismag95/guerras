@@ -185,7 +185,7 @@ ul {
 //************************************BOTON VOLVER**************************/
 #volver {
   display: none;
-  @include posicion (fixed, 90%, 40%, 0);
+  @include posicion (fixed, 90%, 43.5%, 0);
   background-color:$negro_75;
   color: white;
   border-radius: 5px 5px;
@@ -429,13 +429,14 @@ ul {
   @include posicion(absolute, 5%,50%,5%);
   background-image: url("../img/egipto/armas_egipto.jpg");
   background-repeat: no-repeat ;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   height: 90%;
   width: 45%;
   border: solid 1px yellow;
 }
 //*conquista galias*//
-  #Conquista_galias{
+#Conquista_galias{
     background-image: url("../img/guerras/Antes s.I/Conquista de las Galias- Roma vs Galias(58.50a.C)/Julio_César_durante_la_guerra_de_las_Galias.jpg");
     @include posicion (fixed, 10%,10%,10%);
     background-size: cover;
@@ -444,7 +445,7 @@ ul {
     border: solid 1px red;
     display: none;
   }
-  #galias_texto {
+#galias_texto {
     @include posicion(absolute, 5%, 5%, 50%);
     background-color: $negro_75;
     color: rgba(255, 217, 67, 0.76);
@@ -495,51 +496,240 @@ ul {
   overflow-y: scroll;
 }
 //--s.I al s-X-->
+//****conquista romana//
 #conquista_romana_britania{
-
+  background-image: url("../img/guerras/s.I-s.X/Conquista romana de Britania (43d.C)/romanos-contra-britanos.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
 }
-
-#guerra_ruso_bizantina{
-
+#roma_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
-
-#guerras_jazarao_arabes{
-
-}
-
-#invasion_anglosajona{
-
-}
-
+//****turbantes amarillos//
 #rebelion_turbantes_amarillos{
+  background-image: url("../img/guerras/s.I-s.X/Rebelion de los Turbantes amarillos(184 d.C)/Three_Brothers_during_the_Yellow_Turban_Rebellion.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#chinos_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
 
+//****jazaro-arabes//
+#guerras_jazarao_arabes{
+  background-image: url("../img/guerras/s.I-s.X/Guerrras jázaro-árabes (642-652....722-737)/600px-Khazar_1.gif");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#arabes_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+//****ruso-bizantina//
+#guerra_ruso_bizantina{
+  background-image: url("../img/guerras/s.I-s.X/Guerra ruso- bizantina (941)/1280px-Greekfire-madridskylitzes1.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#ruso_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+//****anglosajona//
+#invasion_anglosajona{
+  background-image: url("../img/guerras/s.I-s.X/Invasion anglosajona de Gran Bretaña (s.V -s.VI)/Britain_peoples_circa_600-es.svg.png");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#anglosajona_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 //--s.X al s.XX-->
 
+//****guerra boshin//
 #guerra_boshin{
-
+  background-image: url("../img/guerras/s.X-s.XX/Guerra Boshin (1868-1869)/500px-Land_And_Naval_Battle_of_Hakodate.JPG");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#boshin_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
+//****guerra tres sanchos//
 #guerra_tres_sanchos{
-
+  background-image: url("../img/guerras/s.X-s.XX/Guerra de los tres sanchos (1065)/jura-de-santa-gadea.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#sanchos_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
+//****guerra inca//
 #guerra_inca{
-
+  background-image: url("../img/guerras/s.X-s.XX/Guerra inca- Chanca(1438)/evt100621210000379.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#inca_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
+
+//****primera cruzada//
 #primera_cruzada{
-
+  background-image: url("../img/guerras/s.X-s.XX/Primera Cruzada (s.XI-s.XIII)/concilio de clermont papa urbano II.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#primera_cruzada_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
+
+//****guerra mundial primera//
 #primera_guerra_mundial{
-
+  background-image: url("../img/guerras/s.X-s.XX/Primera Guerra Mundial(1914-1918)/800px-Wn21-19.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#primera_mundial_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
+//****guerra mundial segunda//
 #segunda_guerra_mundial{
-
+  background-image: url("../img/guerras/s.X-s.XX/Segunda Guerra Mundial (1939-1945)/hitler.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
 }
+#segunda_mundial_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 
 //--s.XXI-->
 
