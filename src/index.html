@@ -83,16 +83,13 @@
     <!--******************MAPA DEL MUNDO**************************************-->
     <div class="mapamundi_png"> </div>
 </div>
-<div id="volver">
-    <button>Volver a guerras</button>
-</div>
+    <button id="volver">Volver a guerras</button>
 <!--******************CONTENIDO ANTES SI*******************************-->
 <!--capas de las guerras, estas las hago yo!(ismael)-->
     <!--Campañas de Tutmosis I- Egipto vs Hiscos y Hurritas (1520a.C)-->
     <div id="egipto_vs_hicsos_html" class="informacion">
-        <div id="egipto_texto">
-            <h3>Campaña de Tutmosis I:Egipto vs Hicsos (1520 a.C.)</h3>
-            <article>
+            <article id="egipto_texto">
+                <h3>Campaña de Tutmosis I:Egipto vs Hicsos (1520 a.C.)</h3>
                 <p>La aparición de los hicsos plantea uno de los mayores dilemas de la historia egipcia.
 
                     Comenzó como una migración paulatina, se transformó con el tiempo en conquista militar del territorio egipcio. Esta se logró por los avances tecnológicos que dieron a los invasores extranjeros ventajas tácticas que resultaron decisivas; a saber: la introducción del arco compuesto,la armadura de escamas de bronce, las dagas y espadas curvas de bronce,la utilización del caballo y los carros de guerra (al final de su reinado), desconocidos por los egipcios, y el uso intensivo del bronce que dio a los hicsos una ventaja militar decisiva.
@@ -100,16 +97,12 @@
                     La fuerza militar egipcia consistía esencialmente en infantería, armada con hachas, mazas, lanzas y escudos. El pueblo egipcio, hasta esta etapa de su evolución, era una población que se dedicaba esencialmente a la agricultura, donde se reunían ejércitos de forma temporal para fines determinados durante lapsos de tiempo acotados. No existía hasta ese momento un cuerpo armado en forma permanente.
                 </p>
             </article>
-        </div>
-        <div id="egipto_vs_hicsos_jpg">
-
-        </div>
-
+        <div id="egipto_vs_hicsos_jpg"></div>
     </div>
     <!--conquista de las galias- roma vs galias(58.50a.c)-->
-    <div id="Conquita_galias" class="informacion">
-        <h3>Conquista de las Galias (58-50 a.C.)</h3>
-        <article>
+    <div id="Conquista_galias" class="informacion">
+        <article id="galias_texto">
+            <h3>Conquista de las Galias (58-50 a.C.)</h3>
             <p>La Guerra de las Galias fue un conflicto militar librado entre el procónsul romano Julio César y las tribus galas
                 entre el año 58 a.C. y 51 a.C.. En el curso de las mismas la República romana sometió a la Galia, extenso país
                 que llegaba desde el Mediterráneo hasta el Canal de la Mancha.</p>
@@ -128,28 +121,20 @@
 
             <p>La conquista de estos territorios permitió a Roma asegurar la frontera natural del río Rin.</p>
         </article>
-
-
+        <div id="galias_jpg"></div>
     </div>
     <!--Guerra de Macedonia- Roma vs Macedonia(200-197a.C.)-->
     <div id="guerra_macedonia" class="informacion">
-        <h3>Guerras de Macedonia (214-148 a.C.)</h3>
-
-        <article>
+        <article id="macedonia_texto">
+            <h3>Guerras de Macedonia (214-148 a.C.)</h3>
             <p>Las guerras macedonias fueron una serie de conflictos que enfrentaron el reino de Macedonia y la República romana
                 entre los siglos III aC y II aC .</p>
-        </article>
-
-
-        <article>
             <h2>Primera guerra Macedónica (214-205 aC)</h2>
 
             <p>Durante la segunda guerra púnica , Filip V de Macedonia se alió con Cartago . Ante el miedo del posible refuerzo de
                 Aníbal con tropas macedonias, Roma envió las legiones romanas a través del mar Adriático que junto con algunos aliados
                 de la Liga Etolia consiguieron una paz con Macedonia. Esta guerra fue librada entre el 214 aC y el 205 aC </p>
-        </article>
 
-        <article>
             <h2>Segunda guerra Macedónica (200-196 aC) </h2>
 
             <p>El año 200 aC , siendo Roma la potencia dominante de Italia y del Mediterráneo Occidental, Rodas y Pérgamo
@@ -169,8 +154,6 @@
                 encontraron en la batalla de Cinoscéfalos . El rey macedonio fue derrotado, y firmó un tratado de paz
                 por el que abandonaba sus pretensiones sobre Grecia. Al mismo tiempo, un segundo ejército macedonio era
                 derrotado por Átalo I , rey de Pérgamo , en el Asia Menor .</p>
-        </article>
-        <article>
             <h2>Tercera guerra Macedónica (172-168 aC)</h2>
             <p>Tras la muerte de Felipe V de Macedonia ( 179 aC ), su hijo, Perseo de Macedonia , intentó restaurar la
                 influencia internacional de Macedonia, y se mudó agresivamente contra sus vecinos. Cuando Perseo se vio
@@ -178,8 +161,6 @@
                 En un principio, Roma no le fue bien contra las fuerzas macedonias, pero en el 168 aC , las legiones romanas
                 rompió la falange macedonia en la batalla de Pidna . Más tarde Perseo fue capturado y el reino de Macedonia,
                 se dividió en cuatro repúblicas que Roma controlada.</p>
-        </article>
-        <article>
             <h2>Cuarta guerra Macedónica (150-148 aC) </h2>
             <p>La cuarta guerra macedónica ( 150 aC - 148 aC ) fue la última guerra entre Roma y Macedonia. Tuvo lugar debido a
                 la usurpación del pretendiente Andriscos al trono de Macedonia, fingiendo ser el hijo de Perseo ], el último rey
@@ -188,8 +169,8 @@
     </div>
     <!--guerra de troya (1260-50a.c.)-->
     <div id="guerra_troya" class="informacion">
-        <h3>La guerra de Troya(1260-50 a.C.)</h3>
-        <article>
+        <article id="troya_texto">
+            <h3>La guerra de Troya(1260-50 a.C.)</h3>
             <p>La guerra de Troya fue una guerra contra la ciudad de Troya en Asia Menor por los ejércitos griegos, tras el rapto
                 (o fuga) de Helena de Esparta por Paris de Troya (o Ilión). Esta guerra es la figura central de la épica grecolatina
                 y fue narrada en un ciclo de poemas épicos de los que solo dos nos han llegado intactos, La Ilíada y La Odisea de
@@ -1044,21 +1025,60 @@
             $(".macedonia_png").css("display","none");
             $(".troya_png").css("display","none");
         });
+        $("#galia_enlace").on("click",function () {
+            $("#Conquista_galias").css("display","block");
+            $("#volver").css("display","block");
+            $(".primeros_siglos").css("display","none");
+            $("#menu_antes").css("display","none");
+            $("#menu").css("display","none");
+            $("#volver").on("click",function () {
+                $("#Conquista_galias").css("display","none");
+                $("#volver").css("display","none");
+                $("#menu").css("display","block");
+                antes=true;
+            });
+        });
 
-        <!--boton macedoia-->
+        <!--boton macedonia-->
         $("#mace_enlace").on("mousedown",function () {
             $(".egipto_vs_hicsos_png").css("display","none");
             $(".galia_png").css("display","none");
             $(".macedonia_png").css("display","block");
             $(".troya_png").css("display","none");
         });
+        $("#mace_enlace").on("click",function () {
+            $("#guerra_macedonia").css("display","block");
+            $("#volver").css("display","block");
+            $(".primeros_siglos").css("display","none");
+            $("#menu_antes").css("display","none");
+            $("#menu").css("display","none");
+            $("#volver").on("click",function () {
+                $("#guerra_macedonia").css("display","none");
+                $("#volver").css("display","none");
+                $("#menu").css("display","block");
+                antes=true;
+            });
+        });
+
         <!--boton troya-->
         $("#troya_enlace").on("mousedown",function () {
             $(".egipto_vs_hicsos_png").css("display","none");
             $(".galia_png").css("display","none");
             $(".macedonia_png").css("display","none");
             $(".troya_png").css("display","block");
-
+        });
+        $("#troya_enlace").on("click",function () {
+            $("#guerra_troya").css("display","block");
+            $("#volver").css("display","block");
+            $(".primeros_siglos").css("display","none");
+            $("#menu_antes").css("display","none");
+            $("#menu").css("display","none");
+            $("#volver").on("click",function () {
+                $("#guerra_troya").css("display","none");
+                $("#volver").css("display","none");
+                $("#menu").css("display","block");
+                antes=true;
+            });
         });
 
     });

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 #titulo {
   font-family: 'Kaushan Script', cursive;
@@ -213,6 +214,27 @@ ul {
   display: inline-block;
   width: 100%; }
 
+#volver {
+  display: none;
+  position: fixed;
+  top: 90%;
+  left: 40%;
+  right: 0;
+  text-align: center;
+  z-index: 500;
+  background-color: rgba(81, 15, 0, 0.75);
+  color: white;
+  border-radius: 5px 5px;
+  font-size: 2em;
+  list-style: none;
+  margin: 0;
+  margin-right: 0.5%;
+  margin-top: 5px;
+  padding: 0;
+  line-height: 50px;
+  z-index: 500;
+  height: 10%; }
+
 .mapamundi_png {
   background-image: url("../img/mapamundi-assets/mapamundi.png");
   position: absolute;
@@ -410,7 +432,8 @@ ul {
   top: 0;
   width: 1920px;
   height: 1080px;
-  z-index: 32; }
+  z-index: 32;
+  display: none; }
 
 .yemen_png {
   background-image: url("../img/mapamundi-assets/yemen.png");
@@ -420,7 +443,8 @@ ul {
   top: 501px;
   width: 96px;
   height: 40px;
-  z-index: 31; }
+  z-index: 31;
+  border: solid 1px blue; }
 
 .libia_png {
   background-image: url("../img/mapamundi-assets/libia.png");
@@ -430,7 +454,8 @@ ul {
   top: 415px;
   width: 80px;
   height: 72px;
-  z-index: 30; }
+  z-index: 30;
+  border: solid 1px blue; }
 
 .somalia_png {
   background-image: url("../img/mapamundi-assets/somalia.png");
@@ -440,7 +465,8 @@ ul {
   top: 527px;
   width: 104px;
   height: 126px;
-  z-index: 29; }
+  z-index: 29;
+  border: solid 1px blue; }
 
 .kivu_png {
   background-image: url("../img/mapamundi-assets/kivu.png");
@@ -450,7 +476,8 @@ ul {
   top: 647px;
   width: 82px;
   height: 82px;
-  z-index: 28; }
+  z-index: 28;
+  border: solid 1px blue; }
 
 .siria_png {
   background-image: url("../img/mapamundi-assets/siria.png");
@@ -458,8 +485,9 @@ ul {
   left: 1097px;
   top: 397px;
   width: 86px;
-  height: 255px;
-  z-index: 27; }
+  height: 50px;
+  z-index: 27;
+  border: solid 1px blue; }
 
 #primera_png {
   background-image: url("../img/mapamundi-assets/primera.png");
@@ -482,65 +510,6 @@ ul {
   height: 428px;
   z-index: 200;
   display: none; }
-
-#sxxi {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1920px;
-  height: 1080px;
-  z-index: 32;
-  display: none; }
-
-#yemen_png {
-  background-image: url("../img/mapamundi-assets/yemen.png");
-  opacity: 0.631;
-  position: absolute;
-  left: 1151px;
-  top: 501px;
-  width: 96px;
-  height: 40px;
-  z-index: 200; }
-
-#libia_png {
-  background-image: url("../img/mapamundi-assets/libia.png");
-  opacity: 0.631;
-  position: absolute;
-  left: 949px;
-  top: 415px;
-  width: 80px;
-  height: 72px;
-  z-index: 200; }
-
-#somalia_png {
-  background-image: url("../img/mapamundi-assets/somalia.png");
-  opacity: 0.631;
-  position: absolute;
-  left: 1105px;
-  top: 527px;
-  width: 104px;
-  height: 126px;
-  z-index: 200; }
-
-#kivu_png {
-  background-image: url("../img/mapamundi-assets/kivu.png");
-  opacity: 0.631;
-  position: absolute;
-  left: 1053px;
-  top: 647px;
-  width: 50px;
-  height: 50px;
-  z-index: 200; }
-
-#siria_png {
-  background-image: url("../img/mapamundi-assets/siria.png");
-  opacity: 0.631;
-  position: absolute;
-  left: 1097px;
-  top: 397px;
-  width: 86px;
-  height: 50px;
-  z-index: 200; }
 
 .informacion {
   display: none; }
@@ -587,3 +556,90 @@ ul {
   height: 90%;
   width: 45%;
   border: solid 1px yellow; }
+
+#Conquista_galias {
+  background-image: url("../img/guerras/Antes s.I/Conquista de las Galias- Roma vs Galias(58.50a.C)/Julio_César_durante_la_guerra_de_las_Galias.jpg");
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  z-index: 500;
+  background-size: cover;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none; }
+
+#galias_texto {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 50%;
+  text-align: center;
+  z-index: 500;
+  background-color: rgba(81, 15, 0, 0.75);
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll; }
+
+#guerra_macedonia {
+  background-image: url("../img/guerras/Antes s.I/Guerra de Macedonia- Roma vs Macedonia(200-197a.C.)/guerraMacedonica.jpg");
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  z-index: 500;
+  background-size: cover;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none; }
+
+#macedonia_texto {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 50%;
+  text-align: center;
+  z-index: 500;
+  background-color: rgba(81, 15, 0, 0.75);
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll; }
+
+#guerra_troya {
+  background-image: url("../img/guerras/Antes s.I/Guerra de troya (1260-50a.C.)/caballo-de-troya.jpg");
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  z-index: 500;
+  background-size: cover;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none; }
+
+#troya_texto {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 50%;
+  text-align: center;
+  z-index: 500;
+  background-color: rgba(81, 15, 0, 0.75);
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll; }
