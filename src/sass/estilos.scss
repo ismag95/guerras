@@ -732,26 +732,119 @@ ul {
 
 
 //--s.XXI-->
-
+//****guerra civil siria//
 #guerra_civil_siria{
-
+  background-image: url("../img/guerras/s.XXI/Guerra civil siria(2011)/Alepo-CPablo-Tosco-Oxfam-Intermon_EDIIMA20150326_0571_13.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#siria_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
-#guerra_civil_somali{
 
+//****guerra civil somali//
+#guerra_civil_somali{
+  background-image: url("../img/guerras/s.XXI/Guerra civil somali (2006-2009)/1167305488_extras_albumes_1.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#somali_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 #guerra_kibu{
 
 }
-
-#guerra_libia{
-
+//****guerra kibu//
+#guerra_kibu{
+  background-image: url("../img/guerras/s.XXI/Guerra de Kivu (2004-2009)/Guerra en Kivu.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
 }
+#kibu_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+//****guerra libia//
+#guerra_libia{
+  background-image: url("../img/guerras/s.XXI/Guerra de Libia (2011)/Tanks_outside_of_Misrata_(6)_(8288579409).jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#libia_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 
 #insurgencia_chiita_yemen{
 
 }
+//****guerra chiita yemen//
+#insurgencia_chiita_yemen{
+  background-image: url("../img/guerras/s.XXI/Insurgencia chiita en Yemen (2004-2015)/islamicos.jpg");
+  @include posicion (fixed, 10%,10%,10%);
+  background-size: contain;
+  height: 80%;
+  z-index: 500;
+  border: solid 1px red;
+  display: none;
+}
+#chiita_yemen_texto {
+  @include posicion(absolute, 5%, 5%, 50%);
+  background-color: $negro_75;
+  color: rgba(255, 217, 67, 0.76);
+  font-size: 1.2em;
+  border: solid 1px RED;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 
 //******************************************INTERACCIONES********************************/
 #egipto_enlace:focus .galia_png,.macedonia_png,.troya_png{

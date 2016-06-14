@@ -613,8 +613,8 @@
     <!--s.XXI-->
     <!--Guerra civil siria(2011)-->
     <div id="guerra_civil_siria" class="informacion">
-        <h3>Guerra civil siria(2011)</h3>
-        <article>
+        <article id="siria_texto">
+            <h3>Guerra civil siria(2011)</h3>
             <p>El conflicto sirio tiene sus orígenes en la corrupción, en la captura política, en la pobreza, en la violación de
                 derechos humanos y en la desigualdad.</p>
 
@@ -649,8 +649,8 @@
     </div>
     <!--Guerra civil somali (2006-2009)-->
     <div id="guerra_civil_somali" class="informacion">
-        <h3>Guerra civil Somali (2006-2009)</h3>
-        <article>
+        <article id="somali_texto">
+            <h3>Guerra civil Somali (2006-2009)</h3>
             <p>   La guerra civil Somalí es una de las guerras civiles más sangrientas de la historia de África. La disposición
                 geográfica del país, en pleno cuerno de África, zona de extrema pobreza e inestabilidad política, ha ocasionado
                 que el ya de por si precario estado del país empeore más.  La guerra de Somalia esta en las denominadas por la
@@ -713,8 +713,8 @@
     </div>
     <!--Guerra de Kivu (2004-2009)-->
     <div id="guerra_kibu" class="informacion">
-        <h3>Guerra de Kivu (2004-2009)</h3>
-        <article>
+        <article id="kibu_texto">
+            <h3>Guerra de Kivu (2004-2009)</h3>
             <p>El desencadenante de esta última guerra fue el intento del presidente Kabila de restablecer la autoridad del Estado
                 en el este del Congo, convertido de facto en un protectorado de Ruanda. El presidente, sin embargo, o no debió
                 calcular bien la capacidad de sus fuerzas armadas o no las conocía realmente para semejante aventura; porque las
@@ -756,8 +756,8 @@
     </div>
     <!--Guerra de Libia (2011)-->
     <div id="guerra_libia" class="informacion">
-        <h3>Guerra de Libia (2011)</h3>
-        <article>
+        <article id="libia_texto">
+            <h3>Guerra de Libia (2011)</h3>
             <p>La Guerra de Libia de 2011, llamada también en algunos medios de comunicación Guerra civil libia o Revolución libia,
                 fue un conflicto internacional en territorio libio que comenzó en febrero de 2011. Enfrentó al gobierno de Muamar
                 el Gadafi contra sus opositores, y tuvo como contexto histórico la Primavera Árabe.</p>
@@ -781,8 +781,8 @@
     </div>
     <!--Insurgencia chiita en Yemen (2004-2015)-->
     <div id="insurgencia_chiita_yemen" class="informacion">
-        <h3>Insurgencia chiita en Yemen (2004-2015)</h3>
-        <article>
+        <article id="chiita_yemen_texto">
+            <h3>Insurgencia chiita en Yemen (2004-2015)</h3>
             <p>La insurgencia chiita en Yemen o conflicto de Sa'dah es una guerra civil aún en curso, comenzada en junio de 2004
                 cuando el clérigo opositor Hussein Badreddin al-Houthi, líder de los hutíes, un movimiento chiita de los zaydíes,
                 inició una rebelión contra el Gobierno yemení. La mayor parte de la lucha se ha centrado en la gobernación de
@@ -1295,6 +1295,124 @@
             });
         });
 
+        <!--boton segunda guerra civil siria-->
+        $("#siria_enlace").on("mousedown",function () {
+            $(".boshin_png").css("display","none");
+            $(".inca_png").css("display","none");
+            $(".cruzada_png").css("display","none");
+            $(".primera_png").css("display","none");
+            $(".segunda_png").css("display","block");
+        });
+        $("#siria_enlace").on("click",function () {
+            $("#guerra_civil_siria").show("slow");
+            $("#volver").css("display","block");
+            $(".segunda_png").css("display","none");
+            $("#menu_sx").css("display","none");
+            $("#menu").css("display","none");
+            $("#volver").on("click",function () {
+                $("#guerra_civil_siria").css("display","none");
+                $("#volver").css("display","none");
+                $("#menu").show("fast");
+                x=true;
+            });
+        });
+
+        <!--boton segunda guerra civil somali-->
+        $("#somali_elace").on("mousedown",function () {
+            $(".boshin_png").css("display","none");
+            $(".inca_png").css("display","none");
+            $(".cruzada_png").css("display","none");
+            $(".primera_png").css("display","none");
+            $(".segunda_png").css("display","block");
+        });
+        $("#somali_elace").on("click",function () {
+            $("#guerra_civil_somali").show("slow");
+            $("#volver").css("display","block");
+            $(".segunda_png").css("display","none");
+            $("#menu_sx").css("display","none");
+            $("#menu").css("display","none");
+            $("#volver").on("click",function () {
+                $("#guerra_civil_somali").css("display","none");
+                $("#volver").css("display","none");
+                $("#menu").show("fast");
+                x=true;
+            });
+        });
+
+        <!--boton segunda kibu-->
+        $("#kivu_enlace").on("mousedown",function () {
+            $(".boshin_png").css("display","none");
+            $(".inca_png").css("display","none");
+            $(".cruzada_png").css("display","none");
+            $(".primera_png").css("display","none");
+            $(".segunda_png").css("display","block");
+        });
+        $("#kivu_enlace").on("click",function () {
+            $("#guerra_kibu").show("slow");
+            $("#volver").css("display","block");
+            $(".segunda_png").css("display","none");
+            $("#menu_sx").css("display","none");
+            $("#menu").css("display","none");
+            $("#volver").on("click",function () {
+                $("#guerra_kibu").css("display","none");
+                $("#volver").css("display","none");
+                $("#menu").show("fast");
+                x=true;
+            });
+        });
+
+        <!--boton guerra libia-->
+        $("#libia_enlace").on("mousedown",function () {
+            $(".boshin_png").css("display","none");
+            $(".inca_png").css("display","none");
+            $(".cruzada_png").css("display","none");
+            $(".primera_png").css("display","none");
+            $(".segunda_png").css("display","block");
+        });
+        $("#libia_enlace").on("click",function () {
+            $("#guerra_libia").show("slow");
+            $("#volver").css("display","block");
+            $(".segunda_png").css("display","none");
+            $("#menu_sx").css("display","none");
+            $("#menu").css("display","none");
+            $("#volver").on("click",function () {
+                $("#guerra_libia").css("display","none");
+                $("#volver").css("display","none");
+                $("#menu").show("fast");
+                x=true;
+            });
+        });
+
+        <!--boton insurgencia yemen-->
+        $("#chiita_enlace").on("mousedown",function () {
+            $(".boshin_png").css("display","none");
+            $(".inca_png").css("display","none");
+            $(".cruzada_png").css("display","none");
+            $(".primera_png").css("display","none");
+            $(".segunda_png").css("display","block");
+        });
+        $("#chiita_enlace").on("click",function () {
+            $("#insurgencia_chiita_yemen").show("slow");
+            $("#volver").css("display","block");
+            $(".segunda_png").css("display","none");
+            $("#menu_sx").css("display","none");
+            $("#menu").css("display","none");
+            $("#volver").on("click",function () {
+                $("#insurgencia_chiita_yemen").css("display","none");
+                $("#volver").css("display","none");
+                $("#menu").show("fast");
+                x=true;
+            });
+        });
+
+    });
+
+    $("#mapa").on("click",function () {
+        $(".submenu").css("display","none");
+        $(".informacion").css("display","none");
+        $("#menu").show("fast");
+        $("#volver").css("display","none");
+        console.log()
     });
 
 </script>
