@@ -29,7 +29,6 @@
     </div>
     <div id="menu_sx" class="submenu">
             <button class="opciones_esp" id="boshin_enlace">Guerra Boshin (1868-1869)</button>
-            <button class="opciones_esp" id="tres_sanchos_enlace">Guerra de los tres sanchos (1065)</button>
             <button class="opciones_esp" id="inca_chanca_enlace">Guerra inca- Chanca(1438)</button>
             <button class="opciones_esp" id="primera_cruzada_enlace">Primera Cruzada (s.XI-s.XIII)</button>
             <button class="opciones_esp" id="primera_enlace">Primera Guerra</button>
@@ -438,30 +437,7 @@
                 ejecutados más tarde.</p>
         </article>
     </div>
-    <!--Guerra de los tres sanchos (1065)-->
-    <div id="guerra_tres_sanchos" class="informacion">
-        <article id="sanchos_texto">
-            <h3>Guerra de los tres sanchos (1065)</h3>
-            <p>La Guerra de los Tres Sanchos es el conflicto armado que aconteció en tierras de los actuales Burgos y La Rioja
-                entre 1065 y 1067, en el que participaron Sancho Garcés IV de Navarra, Sancho Ramírez de Aragón y Sancho II de
-                Castilla.</p>
 
-            <p>En esta breve guerra se liberaron las tensiones acumuladas desde tiempos del reparto de la herencia de Sancho III
-                el Mayor de Navarra, abuelo paterno de los tres beligerantes, tras la cesión de algunas tierras castellanas por
-                parte de Fernando a su hermano García III tras la Batalla de Tamarón. Algunos de estos territorios se sublevaron
-                contra el Reino de Navarra cuando este intentó la navarrización del territorio, por lo que pidieron al rey de
-                Castilla que les volviese a tener en sus fronteras, lo que al final llevaría a este conflicto.</p>
-
-            <p>Sancho II de Castilla quiso tomar las tierras de la Bureba y la Rioja Alta, tierras en posesión de su primo,
-                Sancho Garcés IV de Navarra. Tras una serie de ataques por las fronteras por parte del rey castellano, Sancho
-                Garcés pidió ayuda a su primo Sancho Ramírez de Aragón.</p>
-
-            <p>El Cid tomó parte en alguna de estas batallas al lado de Sancho II de Castilla.</p>
-
-            <p>La guerra terminó en 1067 sin ningún vencedor absoluto. Sancho II de Castilla arrebató a Navarra La Bureba, los
-                Montes de Oca y Pancorbo.</p>
-        </article>
-    </div>
     <!--Guerra inca- Chanca(1438)-->
     <div id="guerra_inca" class="informacion">
         <article id="inca_texto">
@@ -912,6 +888,11 @@
         $("#i").on("click",function () {
             if(i==true){
                 $("#menu_si").css("display","block");
+                $(".roma_png").css("display","block");
+                $(".china_png").css("display","block");
+                $(".arabes_png").css("display","block");
+                $(".rusia_png").css("display","block");
+                $(".anglosajon_png").css("display","block");
                 $(".mapasi").css("display","block");
                 $("#menu_antes").css("display","none");
                 $("#menu_sx").css("display","none");
@@ -922,6 +903,7 @@
                 antes=true;
                 i=false;
                 x=true;
+
                 xxi=true;
 
             }
@@ -938,6 +920,9 @@
 
                 $("#menu_sx").css("display","block");
                 $(".mapasx").css("display","block");
+                $(".boshin_png").css("display","block");
+                $(".inca_png").css("display","block");
+                $(".cruzada_png").css("display","block");
                 $("#menu_antes").css("display","none");
                 $("#menu_si").css("display","none");
                 $("#menu_sxx1").css("display","none");
@@ -982,6 +967,11 @@
             if(xxi==true){
                 $("#menu_sxx1").css("display","block");
                 $(".sxxi").css("display","block");
+                $(".yemen_png").css("display","block");
+                $(".libia_png").css("display","block");
+                $(".somalia_png").css("display","block");
+                $(".kivu_png").css("display","block");
+                $(".siria_png").css("display","block");
                 $("#menu_antes").css("display","none");
                 $("#menu_si").css("display","none");
                 $("#menu_sx").css("display","none");
@@ -1095,8 +1085,8 @@
         $("#roma_enlace").on("click",function () {
             $("#conquista_romana_britania").show("slow");
             $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
+            $(".roma_png").css("display","none");
+            $("#menu_si").css("display","none");
             $("#menu").css("display","none");
             $("#volver").on("click",function () {
                 $("#conquista_romana_britania").css("display","none");
@@ -1117,8 +1107,8 @@
         $("#china_enlace").on("click",function () {
             $("#rebelion_turbantes_amarillos").show("slow");
             $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
+            $(".mapasi").css("display","none");
+            $("#menu_si").css("display","none");
             $("#menu").css("display","none");
             $("#volver").on("click",function () {
                 $("#rebelion_turbantes_amarillos").css("display","none");
@@ -1139,8 +1129,8 @@
         $("#arabes_enlace").on("click",function () {
             $("#guerras_jazarao_arabes").show("slow");
             $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
+            $(".mapasi").css("display","none");
+            $("#menu_si").css("display","none");
             $("#menu").css("display","none");
             $("#volver").on("click",function () {
                 $("#guerras_jazarao_arabes").css("display","none");
@@ -1161,8 +1151,8 @@
         $("#ruso_enlace").on("click",function () {
             $("#guerra_ruso_bizantina").show("slow");
             $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
+            $(".mapasi").css("display","none");
+            $("#menu_si").css("display","none");
             $("#menu").css("display","none");
             $("#volver").on("click",function () {
                 $("#guerra_ruso_bizantina").css("display","none");
@@ -1183,8 +1173,8 @@
         $("#anglosajon_enlace").on("click",function () {
             $("#invasion_anglosajona").show("slow");
             $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
+            $(".mapasi").css("display","none");
+            $("#menu_si").css("display","none");
             $("#menu").css("display","none");
             $("#volver").on("click",function () {
                 $("#invasion_anglosajona").css("display","none");
@@ -1206,36 +1196,14 @@
         $("#boshin_enlace").on("click",function () {
             $("#guerra_boshin").show("slow");
             $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
+            $(".mapasx").css("display","none");
+            $("#menu_sx").css("display","none");
             $("#menu").css("display","none");
             $("#volver").on("click",function () {
                 $("#guerra_boshin").css("display","none");
                 $("#volver").css("display","none");
                 $("#menu").show("fast");
-                x=false;
-            });
-        });
-
-        <!--boton tres sanchos-->
-        $("#tres_sanchos_enlace").on("mousedown",function () {
-            $(".boshin_png").css("display","none");
-            $(".inca_png").css("display","none");
-            $(".cruzada_png").css("display","none");
-            $(".primera_png").css("display","none");
-            $(".segunda_png").css("display","none");
-        });
-        $("#tres_sanchos_enlace").on("click",function () {
-            $("#guerra_tres_sanchos").show("slow");
-            $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
-            $("#menu").css("display","none");
-            $("#volver").on("click",function () {
-                $("#guerra_tres_sanchos").css("display","none");
-                $("#volver").css("display","none");
-                $("#menu").show("fast");
-                x=false;
+                x=true;
             });
         });
 
@@ -1250,14 +1218,14 @@
         $("#inca_chanca_enlace").on("click",function () {
             $("#guerra_inca").show("slow");
             $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
+            $(".mapasx").css("display","none");
+            $("#menu_sx").css("display","none");
             $("#menu").css("display","none");
             $("#volver").on("click",function () {
                 $("#guerra_inca").css("display","none");
                 $("#volver").css("display","none");
                 $("#menu").show("fast");
-                x=false;
+                x=true;
             });
         });
 
@@ -1272,14 +1240,14 @@
         $("#primera_cruzada_enlace").on("click",function () {
             $("#primera_cruzada").show("slow");
             $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
+            $(".mapasx").css("display","none");
+            $("#menu_sx").css("display","none");
             $("#menu").css("display","none");
             $("#volver").on("click",function () {
                 $("#primera_cruzada").css("display","none");
                 $("#volver").css("display","none");
                 $("#menu").show("fast");
-                x=false;
+                x=true;
             });
         });
 
@@ -1294,14 +1262,14 @@
         $("#primera_enlace").on("click",function () {
             $("#primera_guerra_mundial").show("slow");
             $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
+            $(".primera_png").css("display","none");
+            $("#menu_sx").css("display","none");
             $("#menu").css("display","none");
             $("#volver").on("click",function () {
                 $("#primera_guerra_mundial").css("display","none");
                 $("#volver").css("display","none");
                 $("#menu").show("fast");
-                x=false;
+                x=true;
             });
         });
 
@@ -1316,14 +1284,14 @@
         $("#segunda_enlace").on("click",function () {
             $("#segunda_guerra_mundial").show("slow");
             $("#volver").css("display","block");
-            $(".primeros_siglos").css("display","none");
-            $("#menu_antes").css("display","none");
+            $(".segunda_png").css("display","none");
+            $("#menu_sx").css("display","none");
             $("#menu").css("display","none");
             $("#volver").on("click",function () {
                 $("#segunda_guerra_mundial").css("display","none");
                 $("#volver").css("display","none");
                 $("#menu").show("fast");
-                x=false;
+                x=true;
             });
         });
 
