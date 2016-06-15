@@ -226,21 +226,21 @@ ul {
       }
                 .galia_png {
                   @include imagenes(url("../img/mapamundi-assets/galia.png"), 879px, 297px, 70px,70px );
-                  border: solid 1px blue;
+
                 }
 
                 .troya_png {
                   @include imagenes(url("../img/mapamundi-assets/troya.png"), 1059px, 371px, 36px,30px);
-                  border: 3px solid blue;
+
                 }
                 .macedonia_png {
                   @include imagenes(url("../img/mapamundi-assets/macedonia.png"),1019px,363px,42px,36px);
-                  border: solid 1px blue;
+
                   }
 
                 .egipto_vs_hicsos_png {
                   @include imagenes(url("../img/mapamundi-assets/egipto_vs_hicsos.png"), 1005px, 393px, 210px, 210px);
-                  border: solid 1px blue;
+
                 }
 //***************************************MAPA SIGLO I*************************************
       .mapasi {
@@ -255,24 +255,24 @@ ul {
                 .arabes_png {
                   @include imagenes(url("../img/mapamundi-assets/arabes.png"),  1083px,  261px, 159px, 150px);
                  background-image: url("../img/mapamundi-assets/arabes.png");
-                  border: solid 1px red;
+
                 }
                 .rusia_png {
                   @include imagenes(url("../img/mapamundi-assets/rusia.png"), 929px, 251px,301px, 179px );
-                  border: solid 1px blue;
+
                 }
                 .china_png {
                   @include imagenes(url("../img/mapamundi-assets/china.png"),  1451px, 357px,200px,138px);
-                  border: solid 1px green;
+
                 }
                 .anglosajon_png {
                   @include imagenes(url("../img/../img/mapamundi-assets/anglosajon.png"),877px,288px,40px,30px);
-                  border: solid 1px black;
+
                 }
                 .roma_png {
                   @include imagenes(url("../img/mapamundi-assets/roma.png"),871px,264px,50px,50px);
 
-                  border: solid 1px blue;
+
                 }
 //***************************************MAPA SIGLOS X************************************
       .mapasx {
@@ -286,17 +286,17 @@ ul {
       }
                 .cruzada_png {
                   @include imagenes(url("../img/mapamundi-assets/cruzada.png"), 912px, 297px, 284px,213px);
-                  border: solid 1px blue;
+
 
                 }
                 .inca_png {
                   @include imagenes(url("../img/mapamundi-assets/inca.png"), 425px, 618px, 102px,217px);
-                  border: solid 1px blue;
+
 
                 }
                 .boshin_png {
                   @include imagenes(url("../img/mapamundi-assets/boshin.png"),1671px,347px,74px,88px);
-                  border: solid 1px blue;
+
                 }
 //***************************************PRIMERA GUERRA MUNDIAL****************************
 
@@ -342,7 +342,7 @@ ul {
   width: 96px;
   height: 40px;
   z-index: 31;
-  border: solid 1px blue;
+
 }
 .libia_png {
   background-image: url("../img/mapamundi-assets/libia.png");
@@ -353,7 +353,7 @@ ul {
   width: 80px;
   height: 72px;
   z-index: 30;
-  border: solid 1px blue;
+
 }
 .somalia_png {
   background-image: url("../img/mapamundi-assets/somalia.png");
@@ -364,7 +364,7 @@ ul {
   width: 104px;
   height: 126px;
   z-index: 29;
-  border: solid 1px blue;
+
 }
 .kivu_png {
   background-image: url("../img/mapamundi-assets/kivu.png");
@@ -375,7 +375,7 @@ ul {
   width: 82px;
   height: 82px;
   z-index: 28;
-  border: solid 1px blue;
+
 }
 .siria_png {
   background-image: url("../img/mapamundi-assets/siria.png");
@@ -385,7 +385,7 @@ ul {
   width: 86px;
   height: 50px;
   z-index: 27;
-  border: solid 1px blue;
+
 }
 
                 #primera_png {
@@ -411,7 +411,7 @@ ul {
   background-size: cover;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #egipto_texto {
@@ -419,7 +419,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -433,7 +433,7 @@ ul {
   background-position: center;
   height: 90%;
   width: 45%;
-  border: solid 1px yellow;
+
 }
 //*conquista galias*//
 #Conquista_galias{
@@ -450,7 +450,7 @@ ul {
     background-color: $negro_75;
     color: rgba(255, 217, 67, 0.76);
     font-size: 1.2em;
-    border: solid 1px RED;
+
     height: 90%;
     overflow: hidden;
     overflow-y: scroll;
@@ -462,7 +462,7 @@ ul {
   background-size: cover;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #macedonia_texto {
@@ -470,7 +470,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -482,7 +482,7 @@ ul {
   background-size: cover;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #troya_texto {
@@ -490,7 +490,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -503,7 +503,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #roma_texto {
@@ -511,7 +511,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -523,7 +523,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #chinos_texto {
@@ -531,7 +531,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -544,7 +544,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #arabes_texto {
@@ -552,7 +552,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -565,7 +565,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #ruso_texto {
@@ -573,7 +573,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -586,7 +586,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #anglosajona_texto {
@@ -594,7 +594,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -609,7 +609,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #boshin_texto {
@@ -617,7 +617,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -630,7 +630,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #sanchos_texto {
@@ -638,7 +638,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -651,7 +651,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #inca_texto {
@@ -659,7 +659,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -673,7 +673,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #primera_cruzada_texto {
@@ -681,7 +681,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -695,7 +695,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #primera_mundial_texto {
@@ -703,7 +703,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -716,7 +716,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #segunda_mundial_texto {
@@ -724,7 +724,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -739,7 +739,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #siria_texto {
@@ -747,7 +747,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -761,7 +761,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #somali_texto {
@@ -769,7 +769,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -785,7 +785,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #kibu_texto {
@@ -793,7 +793,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -806,7 +806,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #libia_texto {
@@ -814,7 +814,7 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
@@ -831,7 +831,7 @@ ul {
   background-size: contain;
   height: 80%;
   z-index: 500;
-  border: solid 1px red;
+
   display: none;
 }
 #chiita_yemen_texto {
@@ -839,15 +839,160 @@ ul {
   background-color: $negro_75;
   color: rgba(255, 217, 67, 0.76);
   font-size: 1.2em;
-  border: solid 1px RED;
+
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
 }
 
 
-//******************************************INTERACCIONES********************************/
-#egipto_enlace:focus .galia_png,.macedonia_png,.troya_png{
-  display: none;
-}
+//******************************************MEDIA QUERY********************************/
+@media screen and (max-width: 1700px){
+  #menu_antes,#menu_si,#menu_sx,#menu_sxx1{
+    font-size: 0.5em;
 
+  }
+}
+@media screen and (max-width: 900px)
+              {
+  //********************DESAPARECE EK MAPA********************************/
+
+
+  //*******************AUMENTO BOTONES*********************************/
+  #menu{
+    font-family: 'Kaushan Script', cursive;
+    @include posicion(fixed, 70px,0,0);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    margin: 0;
+  }
+  .opciones{
+    height: 45%;
+    width: 45%;
+  }
+  #menu_antes {
+    top: 60px;
+    width: 45%;
+    height: 45%;
+    left:5%;
+    right: 55%;
+
+  }
+  .opciones_p{
+    top: 70px;
+
+    height: 24%;
+    width:100%;
+    background-color: rgba(81, 15, 0, 0.75);
+  }
+  #menu_si {
+    top: 60px;
+    width: 45%;
+    height: 45%;
+    left:50%;
+    right: 10%;
+
+  }
+  .opciones_5c{
+    top: 70px;
+
+    height: 19%;
+    width:100%;
+    background-color: rgba(81, 15, 0, 0.75);
+  }
+  #menu_sx {
+    top: 51%;
+    width: 45%;
+    height: 45%;
+    left:5%;
+    right: 55%;
+
+  }
+  .opciones_esp{
+    top: 70px;
+
+    height: 19%;
+    width:100%;
+    background-color: rgba(81, 15, 0, 0.75);
+  }
+  #menu_sxx1 {
+    top: 51%;
+    width: 45%;
+    height: 45%;
+    left:50%;
+    right: 10%;
+
+}
+  .opciones_xx1{
+    top: 70px;
+
+    height: 19%;
+    width:100%;
+    background-color: rgba(81, 15, 0, 0.75);
+  }
+  #egipto_texto{
+    width: 90%;
+  }
+  #egipto_vs_hicsos_jpg{
+    display: none;
+  }
+  #galias_texto{
+    width: 90%;
+  }
+  #galias_jpg{
+    display: none;
+  }
+  #macedonia_texto{
+    width: 90%;
+  }
+  #troya_texto{
+    width: 90%;
+  }
+  #roma_texto{
+    width: 90%;
+  }
+  #chinos_texto{
+     width: 90%;
+   }
+  #arabes_texto{
+    width: 90%;
+  }
+  #ruso_texto{
+    width: 90%;
+  }
+
+  #anglosajona_texto{
+    width: 90%;
+  }
+  #boshin_texto{
+    width: 90%;
+  }
+  #inca_texto{
+    width: 90%;
+  }
+  #primera_cruzada_texto{
+    width: 90%;
+  }
+  #primera_mundial_texto{
+    width: 90%;
+  }
+  #segunda_mundial_texto{
+    width: 90%;
+  }
+  #siria_texto{
+    width: 90%;
+  }
+  #somali_texto{
+    width: 90%;
+  }
+  #kibu_texto{
+    width: 90%;
+  }
+  #libia_texto{
+    width: 90%;
+  }
+  #chiita_yemen_texto{
+    width: 90%;
+  }
+}
