@@ -86,6 +86,40 @@
     <div class="mapamundi_png"> </div>
 </div>
     <button id="volver">Volver a guerras</button>
+<!--************************CONTACTO**************************************-->
+<div id="contacto">
+    <div id="twitter" class="con_boton"></div>
+    <div id="whatsapp" class="con_boton"></div>
+    <div id="facebook" class="con_boton"></div>
+    <div id="gmail" class="con_boton"></div>
+</div>
+<div id="con_twitter">
+    <div id="con_twitter_int">
+        <a href="https://twitter.com/jevychan" class="javi"><img src="img/nombres/javi.png" alt=""></a>
+        <a href="https://twitter.com/ismag95" class="isma"><img src="img/nombres/isma.png" alt=""></a>
+    </div>
+</div>
+    <div id="con_whatsapp">
+        <div id="con_whatsapp_int">
+           <p>JAVI:  608611112</p>
+            <p>ISMA: 667398354</p>
+        </div>
+    </div>
+    <div id="con_facebook">
+        <div id="con_facebook_int">
+            <a href="https://www.facebook.com/javier.fernandezgutierrez.3?fref=ts" class="javi"><img src="img/nombres/javi.png" alt=""></a>
+            <a href="https://www.facebook.com/ismael.gatongonzalez?fref=ts" class="isma"><img src="img/nombres/isma.png" alt=""></a>
+
+        </div>
+
+    </div>
+    <div id="con_gmail">
+        <div id="con_gmail_int">
+            <p>JAVI: <br>  javierfg410@gmail.com</p>
+            <p>ISMA:<br> is.1995.ga@gmail.com</p>
+        </div>
+
+    </div>
 <!--******************CONTENIDO ANTES SI*******************************-->
 <!--capas de las guerras, estas las hago yo!(ismael)-->
     <!--Campañas de Tutmosis I- Egipto vs Hiscos y Hurritas (1520a.C)-->
@@ -992,12 +1026,17 @@
 
         });
 <!--boton ejipto-->
-    $("#egipto_enlace").on("mousedown",function () {
+    $("#egipto_enlace").on("mouseover",function () {
         $(".egipto_vs_hicsos_png").css("display","block");
         $(".galia_png").css("display","none");
         $(".macedonia_png").css("display","none");
         $(".troya_png").css("display","none");
     });
+        $("#egipto_enlace").on("mouseout" ,function(){
+            $(".egipto_vs_hicsos_png").css("display","block");
+            $(".galia_png").css("display","block");
+            $(".macedonia_png").css("display","block");
+            $(".troya_png").css("display","block");});
     $("#egipto_enlace").on("click",function () {
         $("#egipto_vs_hicsos_html").show("slow");
         $("#volver").css("display","block");
@@ -1012,12 +1051,17 @@
         });
     });
         <!--boton galia-->
-        $("#galia_enlace").on("mousedown",function () {
+        $("#galia_enlace").on("mouseover",function () {
             $(".egipto_vs_hicsos_png").css("display","none");
             $(".galia_png").css("display","block");
             $(".macedonia_png").css("display","none");
             $(".troya_png").css("display","none");
         });
+        $("#galia_enlace").on("mouseout" ,function(){
+            $(".egipto_vs_hicsos_png").css("display","block");
+            $(".galia_png").css("display","block");
+            $(".macedonia_png").css("display","block");
+            $(".troya_png").css("display","block");});
         $("#galia_enlace").on("click",function () {
             $("#Conquista_galias").show("slow");
             $("#volver").css("display","block");
@@ -1033,12 +1077,17 @@
         });
 
         <!--boton macedonia-->
-        $("#mace_enlace").on("mousedown",function () {
+        $("#mace_enlace").on("mouseover",function () {
             $(".egipto_vs_hicsos_png").css("display","none");
             $(".galia_png").css("display","none");
             $(".macedonia_png").css("display","block");
             $(".troya_png").css("display","none");
         });
+        $("#mace_enlace").on("mouseout" ,function(){
+            $(".egipto_vs_hicsos_png").css("display","block");
+            $(".galia_png").css("display","block");
+            $(".macedonia_png").css("display","block");
+            $(".troya_png").css("display","block");});
         $("#mace_enlace").on("click",function () {
             $("#guerra_macedonia").show("slow");
             $("#volver").css("display","block");
@@ -1054,12 +1103,17 @@
         });
 
         <!--boton troya-->
-        $("#troya_enlace").on("mousedown",function () {
+        $("#troya_enlace").on("mouseover",function () {
             $(".egipto_vs_hicsos_png").css("display","none");
             $(".galia_png").css("display","none");
             $(".macedonia_png").css("display","none");
             $(".troya_png").css("display","block");
         });
+        $("#troya_enlace").on("mouseout" ,function(){
+            $(".egipto_vs_hicsos_png").css("display","block");
+            $(".galia_png").css("display","block");
+            $(".macedonia_png").css("display","block");
+            $(".troya_png").css("display","block");});
         $("#troya_enlace").on("click",function () {
             $("#guerra_troya").show("slow");
             $("#volver").css("display","block");
@@ -1075,12 +1129,19 @@
         });
 <!-- siglo S1-->
         <!--boton roma-->
-        $("#roma_enlace").on("mousedown",function () {
+        $("#roma_enlace").on("mouseover",function () {
             $(".roma_png").css("display","block");
             $(".rusia_png").css("display","none");
             $(".arabes_png").css("display","none");
             $(".anglosajon_png").css("display","none");
             $(".china_png").css("display","none");
+        });
+        $("#roma_enlace").on("mouseout",function () {
+            $(".roma_png").css("display","block");
+            $(".rusia_png").css("display","block");
+            $(".arabes_png").css("display","block");
+            $(".anglosajon_png").css("display","block");
+            $(".china_png").css("display","block");
         });
         $("#roma_enlace").on("click",function () {
             $("#conquista_romana_britania").show("slow");
@@ -1097,11 +1158,18 @@
         });
 
         <!--boton turbantes amarillos-->
-        $("#china_enlace").on("mousedown",function () {
+        $("#china_enlace").on("mouseover",function () {
             $(".roma_png").css("display","none");
             $(".rusia_png").css("display","none");
             $(".arabes_png").css("display","none");
             $(".anglosajon_png").css("display","none");
+            $(".china_png").css("display","block");
+        });
+        $("#china_enlace").on("mouseout",function () {
+            $(".roma_png").css("display","block");
+            $(".rusia_png").css("display","block");
+            $(".arabes_png").css("display","block");
+            $(".anglosajon_png").css("display","block");
             $(".china_png").css("display","block");
         });
         $("#china_enlace").on("click",function () {
@@ -1119,12 +1187,19 @@
         });
 
         <!--boton jazaro-arabes-->
-        $("#arabes_enlace").on("mousedown",function () {
+        $("#arabes_enlace").on("mouseover",function () {
             $(".roma_png").css("display","none");
             $(".rusia_png").css("display","none");
             $(".arabes_png").css("display","block");
             $(".anglosajon_png").css("display","none");
             $(".china_png").css("display","none");
+        });
+        $("#arabes_enlace").on("mouseout",function () {
+            $(".roma_png").css("display","block");
+            $(".rusia_png").css("display","block");
+            $(".arabes_png").css("display","block");
+            $(".anglosajon_png").css("display","block");
+            $(".china_png").css("display","block");
         });
         $("#arabes_enlace").on("click",function () {
             $("#guerras_jazarao_arabes").show("slow");
@@ -1141,12 +1216,19 @@
         });
 
         <!--boton ruso-bizantina-->
-        $("#ruso_enlace").on("mousedown",function () {
+        $("#ruso_enlace").on("mouseover",function () {
             $(".roma_png").css("display","none");
             $(".rusia_png").css("display","block");
             $(".arabes_png").css("display","none");
             $(".anglosajon_png").css("display","none");
             $(".china_png").css("display","none");
+        });
+        $("#ruso_enlace").on("mouseout",function () {
+            $(".roma_png").css("display","block");
+            $(".rusia_png").css("display","block");
+            $(".arabes_png").css("display","block");
+            $(".anglosajon_png").css("display","block");
+            $(".china_png").css("display","block");
         });
         $("#ruso_enlace").on("click",function () {
             $("#guerra_ruso_bizantina").show("slow");
@@ -1163,12 +1245,19 @@
         });
 
         <!--boton anglosajona-->
-        $("#anglosajon_enlace").on("mousedown",function () {
+        $("#anglosajon_enlace").on("mouseover",function () {
             $(".roma_png").css("display","none");
             $(".rusia_png").css("display","none");
             $(".arabes_png").css("display","none");
             $(".anglosajon_png").css("display","block");
             $(".china_png").css("display","none");
+        });
+        $("#anglosajon_enlace").on("mouseout",function () {
+            $(".roma_png").css("display","block");
+            $(".rusia_png").css("display","block");
+            $(".arabes_png").css("display","block");
+            $(".anglosajon_png").css("display","block");
+            $(".china_png").css("display","block");
         });
         $("#anglosajon_enlace").on("click",function () {
             $("#invasion_anglosajona").show("slow");
@@ -1186,12 +1275,18 @@
 
 <!-- siglo S.X-->
         <!--boton boshin-->
-        $("#boshin_enlace").on("mousedown",function () {
+        $("#boshin_enlace").on("mouseover",function () {
             $(".boshin_png").css("display","block");
             $(".inca_png").css("display","none");
             $(".cruzada_png").css("display","none");
             $(".primera_png").css("display","none");
             $(".segunda_png").css("display","none");
+        });
+        $("#boshin_enlace").on("mouseout",function () {
+            $(".boshin_png").css("display","block");
+            $(".inca_png").css("display","block");
+            $(".cruzada_png").css("display","block");
+
         });
         $("#boshin_enlace").on("click",function () {
             $("#guerra_boshin").show("slow");
@@ -1208,12 +1303,18 @@
         });
 
         <!--boton inca-->
-        $("#inca_chanca_enlace").on("mousedown",function () {
+        $("#inca_chanca_enlace").on("mouseover",function () {
             $(".boshin_png").css("display","none");
             $(".inca_png").css("display","block");
             $(".cruzada_png").css("display","none");
             $(".primera_png").css("display","none");
             $(".segunda_png").css("display","none");
+        });
+        $("#inca_chanca_enlace").on("mouseout",function () {
+            $(".boshin_png").css("display","block");
+            $(".inca_png").css("display","block");
+            $(".cruzada_png").css("display","block");
+
         });
         $("#inca_chanca_enlace").on("click",function () {
             $("#guerra_inca").show("slow");
@@ -1230,12 +1331,18 @@
         });
 
         <!--boton primera cruzada-->
-        $("#primera_cruzada_enlace").on("mousedown",function () {
+        $("#primera_cruzada_enlace").on("mouseover",function () {
             $(".boshin_png").css("display","none");
             $(".inca_png").css("display","none");
             $(".cruzada_png").css("display","block");
             $(".primera_png").css("display","none");
             $(".segunda_png").css("display","none");
+        });
+        $("#primera_cruzada_enlace").on("mouseout",function () {
+            $(".boshin_png").css("display","block");
+            $(".inca_png").css("display","block");
+            $(".cruzada_png").css("display","block");
+
         });
         $("#primera_cruzada_enlace").on("click",function () {
             $("#primera_cruzada").show("slow");
@@ -1252,12 +1359,20 @@
         });
 
         <!--boton primera guerra mundial-->
-        $("#primera_enlace").on("mousedown",function () {
+        $("#primera_enlace").on("mouseover",function () {
             $(".boshin_png").css("display","none");
             $(".inca_png").css("display","none");
             $(".cruzada_png").css("display","none");
             $(".primera_png").css("display","block");
             $(".segunda_png").css("display","none");
+        });
+        $("#primera_enlace").on("mouseout",function () {
+            $(".boshin_png").css("display","block");
+            $(".inca_png").css("display","block");
+            $(".cruzada_png").css("display","block");
+            $(".primera_png").css("display","none");
+            $(".segunda_png").css("display","none");
+
         });
         $("#primera_enlace").on("click",function () {
             $("#primera_guerra_mundial").show("slow");
@@ -1274,12 +1389,20 @@
         });
 
         <!--boton segunda guerra mundial-->
-        $("#segunda_enlace").on("mousedown",function () {
+        $("#segunda_enlace").on("mouseover",function () {
             $(".boshin_png").css("display","none");
             $(".inca_png").css("display","none");
             $(".cruzada_png").css("display","none");
             $(".primera_png").css("display","none");
             $(".segunda_png").css("display","block");
+        });
+        $("#segunda_enlace").on("mouseout",function () {
+            $(".boshin_png").css("display","block");
+            $(".inca_png").css("display","block");
+            $(".cruzada_png").css("display","block");
+            $(".primera_png").css("display","none");
+            $(".segunda_png").css("display","none");
+
         });
         $("#segunda_enlace").on("click",function () {
             $("#segunda_guerra_mundial").show("slow");
@@ -1296,13 +1419,20 @@
         });
 
         <!--boton segunda guerra civil siria-->
-        $("#siria_enlace").on("mousedown",function () {
+        $("#siria_enlace").on("mouseover",function () {
             $(".kivu_png").css("display","none");
             $(".libia_png").css("display","none");
-            $(".yemen_png_png").css("display","none");
+            $(".yemen_png").css("display","none");
             $(".somalia_png").css("display","none");
             $(".siria_png").css("display","block");
 
+        });
+        $("#siria_enlace").on("mouseout",function () {
+            $(".kivu_png").css("display","block");
+            $(".libia_png").css("display","block");
+            $(".yemen_png").css("display","block");
+            $(".somalia_png").css("display","block");
+            $(".siria_png").css("display","block");
         });
         $("#siria_enlace").on("click",function () {
             $("#guerra_civil_siria").show("slow");
@@ -1319,12 +1449,19 @@
         });
 
         <!--boton segunda guerra civil somali-->
-        $("#somali_elace").on("mousedown",function () {
+        $("#somali_elace").on("mouseover",function () {
             $(".kivu_png").css("display","none");
             $(".libia_png").css("display","none");
-            $(".yemen_png_png").css("display","none");
+            $(".yemen_png").css("display","none");
             $(".somalia_png").css("display","block");
             $(".siria_png").css("display","none");
+        });
+        $("#somali_elace").on("mouseout",function () {
+            $(".kivu_png").css("display","block");
+            $(".libia_png").css("display","block");
+            $(".yemen_png_png").css("display","block");
+            $(".somalia_png").css("display","block");
+            $(".siria_png").css("display","block");
         });
         $("#somali_elace").on("click",function () {
             $("#guerra_civil_somali").show("slow");
@@ -1341,12 +1478,19 @@
         });
 
         <!--boton segunda kibu-->
-        $("#kivu_enlace").on("mousedown",function () {
+        $("#kivu_enlace").on("mouseover",function () {
             $(".kivu_png").css("display","block");
             $(".libia_png").css("display","none");
-            $(".yemen_png_png").css("display","none");
+            $(".yemen_png").css("display","none");
             $(".somalia_png").css("display","none");
             $(".siria_png").css("display","none");
+        });
+        $("#kivu_enlace").on("mouseout",function () {
+            $(".kivu_png").css("display","block");
+            $(".libia_png").css("display","block");
+            $(".yemen_png").css("display","block");
+            $(".somalia_png").css("display","block");
+            $(".siria_png").css("display","block");
         });
         $("#kivu_enlace").on("click",function () {
             $("#guerra_kibu").show("slow");
@@ -1363,12 +1507,19 @@
         });
 
         <!--boton guerra libia-->
-        $("#libia_enlace").on("mousedown",function () {
+        $("#libia_enlace").on("mouseover",function () {
             $(".kivu_png").css("display","none");
             $(".libia_png").css("display","block");
-            $(".yemen_png_png").css("display","none");
+            $(".yemen_png").css("display","none");
             $(".somalia_png").css("display","none");
             $(".siria_png").css("display","none");
+        });
+        $("#libia_enlace").on("mouseout",function () {
+            $(".kivu_png").css("display","block");
+            $(".libia_png").css("display","block");
+            $(".yemen_png").css("display","block");
+            $(".somalia_png").css("display","block");
+            $(".siria_png").css("display","block");
         });
         $("#libia_enlace").on("click",function () {
             $("#guerra_libia").show("slow");
@@ -1385,12 +1536,19 @@
         });
 
         <!--boton insurgencia yemen-->
-        $("#chiita_enlace").on("mousedown",function () {
+        $("#chiita_enlace").on("mouseover",function () {
             $(".kivu_png").css("display","none");
             $(".libia_png").css("display","none");
-            $(".yemen_png_png").css("display","block");
+            $(".yemen_png").css("display","block");
             $(".somalia_png").css("display","none");
             $(".siria_png").css("display","none");
+        });
+        $("#chiita_enlace").on("mouseout",function () {
+            $(".kivu_png").css("display","block");
+            $(".libia_png").css("display","block");
+            $(".yemen_png").css("display","block");
+            $(".somalia_png").css("display","block");
+            $(".siria_png").css("display","block");
         });
         $("#chiita_enlace").on("click",function () {
             $("#insurgencia_chiita_yemen").show("slow");
@@ -1413,7 +1571,116 @@
         $(".informacion").css("display","none");
         $("#menu").show("fast");
         $("#volver").css("display","none");
+        $(".primeros_siglos").css("display","none");
+        $(".mapasi").css("display","none");
+        $(".mapasx").css("display","none");
+        $(".sxxi").css("display","none");
         console.log()
+       antes=true;
+        i=true;
+        x=true;
+        xxi=true;
+    });
+    $("#twitter").on("mouseover" ,function(){
+        $("#twitter").css({"background-image":" url('../img/logos/twitter_on.png')"})
+    })
+    $("#twitter").on("mouseout" ,function(){
+        $("#twitter").css({"background-image":" url('../img/logos/twitter_off.png')"})
+    });
+    var tw=true,ws=true,fc=true,gm=true;
+    $("#twitter").on("click" ,function(){
+
+        if(tw==true){
+            $("#con_twitter").css({"display":"block"});
+            $("#con_whatsapp").css({"display":"none"});
+            $("#con_gmail").css({"display":"none"});
+            $("#con_facebook").css({"display":"none"});
+            tw=false;
+            ws=true;
+            fc=true;
+            gm=true;
+        }
+       else{
+            $("#con_twitter").css({"display":"none"});
+            tw=true;
+        }
+
+    });
+    
+    $("#whatsapp").on("mouseover" ,function(){
+        $("#whatsapp").css({"background-image":" url('../img/logos/whatsapp_on.png')"})
+    });
+    $("#whatsapp").on("mouseout" ,function(){
+        $("#whatsapp").css({"background-image":" url('../img/logos/whatsapp_off.png')"})
+    });
+
+    $("#whatsapp").on("click" ,function(){
+
+        if(ws==true){
+            $("#con_twitter").css({"display":"none"});
+            $("#con_whatsapp").css({"display":"block"});
+            $("#con_gmail").css({"display":"none"});
+            $("#con_facebook").css({"display":"none"});
+            tw=true;
+            ws=false;
+            fc=true;
+            gm=true;
+        }
+        else{
+            $("#con_whatsapp").css({"display":"none"});
+            ws=true;
+        }
+
+    });
+    
+    $("#facebook").on("mouseover" ,function(){
+        $("#facebook").css({"background-image":" url('../img/logos/face_on.png')"})
+    });
+    $("#facebook").on("mouseout" ,function(){
+        $("#facebook").css({"background-image":" url('../img/logos/face_off.png')"})
+    });
+    $("#facebook").on("click" ,function(){
+
+        if(fc==true){
+            $("#con_twitter").css({"display":"none"});
+            $("#con_whatsapp").css({"display":"none"});
+            $("#con_gmail").css({"display":"none"});
+            $("#con_facebook").css({"display":"block"});
+            tw=true;
+            ws=true;
+            fc=false;
+            gm=true;
+        }
+        else{
+            $("#con_facebook").css({"display":"none"});
+            fc=true;
+        }
+
+    });
+    
+    $("#gmail").on("mouseover" ,function(){
+        $("#gmail").css({"background-image":" url('../img/logos/gmail_on.png')"})
+    });
+    $("#gmail").on("mouseout" ,function(){
+        $("#gmail").css({"background-image":" url('../img/logos/gmail_off.png')"})
+    });
+    $("#gmail").on("click" ,function(){
+
+        if(gm==true){
+            $("#con_twitter").css({"display":"none"});
+            $("#con_whatsapp").css({"display":"none"});
+            $("#con_gmail").css({"display":"block"});
+            $("#con_facebook").css({"display":"none"});
+            tw=false;
+            ws=true;
+            fc=true;
+            gm=false;
+        }
+        else{
+            $("#con_gmail").css({"display":"none"});
+            fc=true;
+        }
+
     });
 
 </script>

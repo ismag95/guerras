@@ -751,6 +751,7 @@ ul {
   height: 90%;
   overflow: hidden;
   overflow-y: scroll;
+
 }
 
 
@@ -995,4 +996,101 @@ ul {
   #chiita_yemen_texto{
     width: 90%;
   }
+}
+#contacto{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.76);
+  z-index: 500;
+}
+.con_boton{
+  margin-top: 5px;
+  height: 35px;
+  width: 34px;
+}
+#twitter{
+  position: absolute;
+  top:0;
+  right: 5px;
+  background-image: url("../img/logos/twitter_off.png");
+;
+}
+#con_twitter{
+  position: fixed;
+  top:70px;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.50);
+  z-index: 500;
+  display: none;
+}
+#con_twitter_int{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: rgba(238, 238, 238, 0.76);
+}
+
+#whatsapp{
+position: absolute;
+  top:0;
+  right: 45px;
+  background-image: url("../img/logos/whatsapp_off.png");
+}
+#con_whatsapp{
+  @extend #con_twitter;
+
+}
+#con_whatsapp_int{
+  @extend #con_twitter_int;
+
+}
+#con_whatsapp_int p{
+  height: 100px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5em;
+}
+#facebook{
+  position: absolute;
+  top:0;
+  right: 90px;
+  background-image: url("../img/logos/face_off.png");
+}
+#con_facebook{
+  @extend #con_twitter;
+
+}
+#con_facebook_int{
+  @extend #con_twitter_int;
+
+}
+#gmail{
+  position: absolute;
+  top:0;
+  right: 135px;
+  background-image: url("../img/logos/gmail_off.png");
+}
+#con_gmail{
+  @extend #con_twitter;
+
+}
+#con_gmail_int{
+  @extend #con_twitter_int;
+  text-align: center;
+
+}
+#con_gmail_int p{
+  height: 100px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1em;
 }
